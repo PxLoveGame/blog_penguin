@@ -12,18 +12,19 @@ class BlogController extends Controller
      */
     public function indexAction()
     {
-        return $this->render('index.html.twig', array(
-            // ...
+        return $this->render('base.html.twig', array(
+
         ));
     }
 
     /**
-     * @Route("/post")
+     * @Route("/post/{arg}")
+     *
      */
-    public function postAction()
+    public function postAction($arg)
     {
         return $this->render('post.html.twig', array(
-            // ...
+            "arg" => $arg
         ));
     }
 
