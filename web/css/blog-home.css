@@ -6,10 +6,23 @@
 
 body {
   padding-top: 54px;
+  background-image: url("../img/penguin_background.jpg");
+  background-size: cover;
+  background-position: left top;
+  background-repeat: no-repeat;
 }
 
 @media (min-width: 992px) {
   body {
     padding-top: 56px;
   }
+}
+
+.widget-color {
+  color: white;
+  background-color: rgba(52, 58, 64);
+}
+
+.article-text {
+  font-size: large;
 }
