@@ -18,7 +18,12 @@ class BlogController extends Controller
      */
     public function indexAction()
     {
+        $articles = [];
+
+
+
         return $this->render('index.html.twig', array(
+            "articles" => $articles
 
         ));
     }
@@ -74,6 +79,21 @@ class BlogController extends Controller
     {
         return $this->render('post.html.twig', array(
             "arg" => $arg
+        ));
+    }
+
+    /**
+     * @Route("/populate")
+     */
+    public function populateAction()
+    {
+        $articles = [];
+
+
+
+        return $this->render('index.html.twig', array(
+            "articles" => $articles
+
         ));
     }
 

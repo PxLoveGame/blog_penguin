@@ -9,6 +9,7 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Gedmo\Mapping\Annotation as Gedmo;
 
 /**
  * Class Article
@@ -18,6 +19,7 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Article
 {
+
     /**
      * @ORM\Id
      * @ORM\Column(type="integer")
@@ -32,7 +34,7 @@ class Article
 
     /**
      * @Gedmo\Slug(fields={"title", "id"})
-     * @ORM\Column(type="string", unique=true)
+     * @ORM\Column(type="string", unique=true, nullable=true)
      */
     protected $url;
 
@@ -52,6 +54,14 @@ class Article
     protected $published;
 
 
+
+
+    // ==== Construct ====
+
+//    public function __construct( $title, $t )
+//    {
+//
+//    }
 
 
     // ==== Getter / Setter ====
@@ -76,15 +86,15 @@ class Article
      */
     public function getTitre()
     {
-        return $this->titre;
+        return $this->title;
     }
 
     /**
-     * @param mixed $titre
+     * @param mixed $title
      */
-    public function setTitre($titre)
+    public function setTitre($title)
     {
-        $this->titre = $titre;
+        $this->title = $title;
     }
 
     /**
