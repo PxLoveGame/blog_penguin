@@ -74,17 +74,17 @@ class Article
     /**
      * @return mixed
      */
-    public function getTitre()
+    public function getTitle()
     {
-        return $this->titre;
+        return $this->title;
     }
 
     /**
      * @param mixed $titre
      */
-    public function setTitre($titre)
+    public function setTitle($title)
     {
-        $this->titre = $titre;
+        $this->title = $title;
     }
 
     /**

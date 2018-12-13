@@ -3,8 +3,11 @@
 namespace AppBundle\Controller;
 
 use AppBundle\Entity\Article;
+
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\UrlType;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
@@ -26,16 +29,9 @@ class BlogController extends Controller
     /**
      * @Route("/create", name="goto_create")
      */
-    public function createAction()
-    {
-        return $this->render('create.html.twig', array());
-    }
-
-
-    public function form_createAction(Request $request)
+    public function createAction(Request $request)
     {
         $article = new Article();
-
 
         $form = $this->createFormBuilder($article)
             ->add('title', TextType::class)
@@ -44,25 +40,29 @@ class BlogController extends Controller
             ->add('save', SubmitType::class, array('label' => 'Publier'))
             ->getForm();
 
+        $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
 
-            $data = $form->getData();
-            dump($data);
-            $article->setTitre($data);
-            // ... perform some action, such as saving the task to the database
-            // for example, if Task is a Doctrine entity, save it!
-            // $entityManager = $this->getDoctrine()->getManager();
-            // $entityManager->persist($task);
-            // $entityManager->flush();
+            $article = $form->getData();
+
+            dump($article);
+
+            $entityManager = $this->getDoctrine()->getManager();
+            $entityManager->persist($article);
+            $entityManager->flush();
 
             return $this->redirectToRoute('task_success');
-
         }
 
-        return $this->render('default/create.html.twig', array(
+        return $this->render('create.html.twig', array(
             'form' => $form->createView(),
         ));
+    }
+
+
+    public function form_createAction(Request $request)
+    {
 
     }
 
