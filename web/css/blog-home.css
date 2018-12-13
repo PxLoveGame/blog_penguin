@@ -26,3 +26,8 @@ body {
 .article-text {
   font-size: large;
 }
+
+
+.button-create {
+  width: 50%;
+}
