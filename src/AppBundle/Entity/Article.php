@@ -28,12 +28,18 @@ class Article
     /**
      * @ORM\Column(type="string")
      */
-    protected $titre;
+    protected $title;
+
+    /**
+     * @Gedmo\Slug(fields={"title", "id"})
+     * @ORM\Column(type="string", unique=true)
+     */
+    protected $url;
 
     /**
      * @ORM\Column(type="string")
      */
-    protected $url;
+    protected $photo_url;
 
     /**
      * @ORM\Column(type="string")
@@ -41,7 +47,7 @@ class Article
     protected $content;
 
     /**
-     * @ORM\Column(type="datetime")
+     * @ORM\Column(type="datetime", options={"default": "CURRENT_TIMESTAMP"})
      */
     protected $published;
 
@@ -129,4 +135,19 @@ class Article
         $this->published = $published;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getPhotoUrl()
+    {
+        return $this->photo_url;
+    }
+
+    /**
+     * @param mixed $photo_url
+     */
+    public function setPhotoUrl($photo_url)
+    {
+        $this->photo_url = $photo_url;
+    }
 }
