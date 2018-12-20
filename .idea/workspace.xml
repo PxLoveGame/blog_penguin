@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3fcef8eb-0ac6-4dbe-a8e9-da392ba4124e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/security.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/security.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +37,7 @@
           <entry key="php" value="561" />
           <entry key="twig" value="103" />
           <entry key="txt" value="126" />
-          <entry key="yml" value="79" />
+          <entry key="yml" value="97" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -48,7 +47,7 @@
           <entry key="PHP" value="561" />
           <entry key="PLAIN_TEXT" value="162" />
           <entry key="Twig" value="103" />
-          <entry key="YAML" value="79" />
+          <entry key="YAML" value="97" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -90,7 +89,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/BlogController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
@@ -132,8 +131,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/config/security.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+            <state relative-caret-position="450">
+              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
             </state>
           </provider>
         </entry>
@@ -147,11 +146,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/config/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+            <state relative-caret-position="480">
+              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
             </state>
           </provider>
         </entry>
@@ -192,6 +191,7 @@
       <find>url</find>
       <find>itre</find>
       <find>%kernel.project_dir%</find>
+      <find>userbun</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -293,11 +293,11 @@
       <path value="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-3" />
+  <component name="ProjectFrameBounds" extendedState="4">
+    <option name="x" value="840" />
     <option name="y" value="25" />
-    <option name="width" value="1686" />
-    <option name="height" value="1028" />
+    <option name="width" value="840" />
+    <option name="height" value="1025" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -366,7 +366,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="sqlite" />
-    <property name="SearchEverywhereHistoryKey" value="Controller&#9;FILE&#9;file:///auto_home/tkriszt/PhpstormProjects/blog_penguin/src/AppBundle/Controller/BlogController.php&#10;PostCon&#9;FILE&#9;file:///auto_home/tkriszt/PhpstormProjects/blog_penguin/src/AppBundle/Controller/PostController.php&#10;kern&#9;FILE&#9;file:///auto_home/tkriszt/PhpstormProjects/blog_penguin/app/AppKernel.php&#10;services.y&#9;FILE&#9;file:///auto_home/tkriszt/PhpstormProjects/blog_penguin/app/config/services.yml&#10;boot&#9;FILE&#9;file:///auto_home/tkriszt/PhpstormProjects/blog_penguin/web/css/bootstrap.min.css&#10;security.y&#9;FILE&#9;file:///auto_home/tkriszt/PhpstormProjects/blog_penguin/app/config/security.yml&#10;Kernel&#9;FILE&#9;file:///auto_home/tkriszt/PhpstormProjects/blog_penguin/app/AppKernel.php&#10;sqli&#9;FILE&#9;file:///auto_home/tkriszt/PhpstormProjects/blog_penguin/var/data/data.sqlite&#10;Appkern&#9;FILE&#9;file:///auto_home/tkriszt/PhpstormProjects/blog_penguin/app/AppKernel.php&#10;config/bundles&#9;FILE&#9;file:///auto_home/tkriszt/PhpstormProjects/blog_penguin/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Tests/Functional/app/ConfigDump/bundles.php" />
+    <property name="SearchEverywhereHistoryKey" value="config&#9;FILE&#9;file:///auto_home/tkriszt/PhpstormProjects/blog_penguin/app/config/config.yml&#10;Controller&#9;FILE&#9;file:///auto_home/tkriszt/PhpstormProjects/blog_penguin/src/AppBundle/Controller/BlogController.php&#10;PostCon&#9;FILE&#9;file:///auto_home/tkriszt/PhpstormProjects/blog_penguin/src/AppBundle/Controller/PostController.php&#10;kern&#9;FILE&#9;file:///auto_home/tkriszt/PhpstormProjects/blog_penguin/app/AppKernel.php&#10;services.y&#9;FILE&#9;file:///auto_home/tkriszt/PhpstormProjects/blog_penguin/app/config/services.yml&#10;boot&#9;FILE&#9;file:///auto_home/tkriszt/PhpstormProjects/blog_penguin/web/css/bootstrap.min.css&#10;security.y&#9;FILE&#9;file:///auto_home/tkriszt/PhpstormProjects/blog_penguin/app/config/security.yml&#10;Kernel&#9;FILE&#9;file:///auto_home/tkriszt/PhpstormProjects/blog_penguin/app/AppKernel.php&#10;sqli&#9;FILE&#9;file:///auto_home/tkriszt/PhpstormProjects/blog_penguin/var/data/data.sqlite&#10;Appkern&#9;FILE&#9;file:///auto_home/tkriszt/PhpstormProjects/blog_penguin/app/AppKernel.php&#10;config/bundles&#9;FILE&#9;file:///auto_home/tkriszt/PhpstormProjects/blog_penguin/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Tests/Functional/app/ConfigDump/bundles.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/bin/console" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -541,7 +541,7 @@
       <option name="presentableId" value="Default" />
       <updated>1543505495948</updated>
       <workItem from="1543505497121" duration="5935000" />
-      <workItem from="1545308026683" duration="8761000" />
+      <workItem from="1545308026683" duration="9307000" />
     </task>
     <task id="LOCAL-00001" summary="push on dev">
       <created>1543507419388</created>
@@ -592,11 +592,32 @@
       <option name="project" value="LOCAL" />
       <updated>1545317145830</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Essai fix package dev only (pour deploy sur Heroku)">
+      <created>1545317830858</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1545317830858</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Essai fix package dev only (pour deploy sur Heroku)">
+      <created>1545317920176</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1545317920176</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Essai fix package dev only (pour deploy sur Heroku)">
+      <created>1545318158266</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1545318158266</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29035000" />
+    <option name="totallyTimeSpent" value="29581000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -608,15 +629,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3" y="25" width="1686" height="1028" extended-state="6" />
+    <frame x="840" y="25" width="840" height="1025" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19400245" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.40228426" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23470522" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23549107" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -864,13 +885,6 @@
         <state relative-caret-position="-77" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -882,13 +896,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="19" column="47" lean-forward="true" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -913,6 +920,20 @@
           <folding>
             <element signature="e#40#69#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
