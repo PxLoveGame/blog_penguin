@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3fcef8eb-0ac6-4dbe-a8e9-da392ba4124e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/routing.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,7 +39,7 @@
           <entry key="php" value="561" />
           <entry key="twig" value="103" />
           <entry key="txt" value="126" />
-          <entry key="yml" value="97" />
+          <entry key="yml" value="143" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -47,7 +49,7 @@
           <entry key="PHP" value="561" />
           <entry key="PLAIN_TEXT" value="162" />
           <entry key="Twig" value="103" />
-          <entry key="YAML" value="97" />
+          <entry key="YAML" value="143" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -59,7 +61,7 @@
           <entry key="sql" value="2" />
           <entry key="sqlite" value="2" />
           <entry key="twig" value="4" />
-          <entry key="yml" value="3" />
+          <entry key="yml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -70,7 +72,7 @@
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="Scratch" value="2" />
           <entry key="Twig" value="4" />
-          <entry key="YAML" value="3" />
+          <entry key="YAML" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
@@ -149,22 +151,24 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/config/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="180">
+              <caret line="33" column="23" lean-forward="true" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Article.php">
+        <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="67" column="7" selection-start-line="67" selection-start-column="7" selection-end-line="67" selection-end-column="7" />
-              <folding>
-                <element signature="e#120#152#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="75">
+              <caret line="5" column="51" lean-forward="true" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/routing_dev.yml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -192,6 +196,7 @@
       <find>itre</find>
       <find>%kernel.project_dir%</find>
       <find>userbun</find>
+      <find>framew</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -214,7 +219,6 @@
         <option value="$PROJECT_DIR$/web/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/ArticleEntity.php" />
-        <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/app/config/config_dev.yml" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/web/css/blog-home.css" />
@@ -231,6 +235,8 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/User.php" />
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
         <option value="$PROJECT_DIR$/app/config/security.yml" />
+        <option value="$PROJECT_DIR$/app/config/routing.yml" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
       </list>
     </option>
   </component>
@@ -366,7 +372,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="sqlite" />
-    <property name="SearchEverywhereHistoryKey" value="config&#9;FILE&#9;file:///auto_home/tkriszt/PhpstormProjects/blog_penguin/app/config/config.yml&#10;Controller&#9;FILE&#9;file:///auto_home/tkriszt/PhpstormProjects/blog_penguin/src/AppBundle/Controller/BlogController.php&#10;PostCon&#9;FILE&#9;file:///auto_home/tkriszt/PhpstormProjects/blog_penguin/src/AppBundle/Controller/PostController.php&#10;kern&#9;FILE&#9;file:///auto_home/tkriszt/PhpstormProjects/blog_penguin/app/AppKernel.php&#10;services.y&#9;FILE&#9;file:///auto_home/tkriszt/PhpstormProjects/blog_penguin/app/config/services.yml&#10;boot&#9;FILE&#9;file:///auto_home/tkriszt/PhpstormProjects/blog_penguin/web/css/bootstrap.min.css&#10;security.y&#9;FILE&#9;file:///auto_home/tkriszt/PhpstormProjects/blog_penguin/app/config/security.yml&#10;Kernel&#9;FILE&#9;file:///auto_home/tkriszt/PhpstormProjects/blog_penguin/app/AppKernel.php&#10;sqli&#9;FILE&#9;file:///auto_home/tkriszt/PhpstormProjects/blog_penguin/var/data/data.sqlite&#10;Appkern&#9;FILE&#9;file:///auto_home/tkriszt/PhpstormProjects/blog_penguin/app/AppKernel.php&#10;config/bundles&#9;FILE&#9;file:///auto_home/tkriszt/PhpstormProjects/blog_penguin/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Tests/Functional/app/ConfigDump/bundles.php" />
+    <property name="SearchEverywhereHistoryKey" value="config.y&#9;FILE&#9;file:///auto_home/tkriszt/PhpstormProjects/blog_penguin/app/config/config.yml&#10;routing.yml&#9;FILE&#9;file:///auto_home/tkriszt/PhpstormProjects/blog_penguin/app/config/routing_dev.yml&#10;routing.ym&#9;FILE&#9;file:///auto_home/tkriszt/PhpstormProjects/blog_penguin/app/config/routing.yml&#10;config&#9;FILE&#9;file:///auto_home/tkriszt/PhpstormProjects/blog_penguin/app/config/config.yml&#10;Controller&#9;FILE&#9;file:///auto_home/tkriszt/PhpstormProjects/blog_penguin/src/AppBundle/Controller/BlogController.php&#10;PostCon&#9;FILE&#9;file:///auto_home/tkriszt/PhpstormProjects/blog_penguin/src/AppBundle/Controller/PostController.php&#10;kern&#9;FILE&#9;file:///auto_home/tkriszt/PhpstormProjects/blog_penguin/app/AppKernel.php&#10;services.y&#9;FILE&#9;file:///auto_home/tkriszt/PhpstormProjects/blog_penguin/app/config/services.yml&#10;boot&#9;FILE&#9;file:///auto_home/tkriszt/PhpstormProjects/blog_penguin/web/css/bootstrap.min.css&#10;security.y&#9;FILE&#9;file:///auto_home/tkriszt/PhpstormProjects/blog_penguin/app/config/security.yml&#10;Kernel&#9;FILE&#9;file:///auto_home/tkriszt/PhpstormProjects/blog_penguin/app/AppKernel.php&#10;sqli&#9;FILE&#9;file:///auto_home/tkriszt/PhpstormProjects/blog_penguin/var/data/data.sqlite&#10;Appkern&#9;FILE&#9;file:///auto_home/tkriszt/PhpstormProjects/blog_penguin/app/AppKernel.php&#10;config/bundles&#9;FILE&#9;file:///auto_home/tkriszt/PhpstormProjects/blog_penguin/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Tests/Functional/app/ConfigDump/bundles.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/bin/console" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -541,7 +547,7 @@
       <option name="presentableId" value="Default" />
       <updated>1543505495948</updated>
       <workItem from="1543505497121" duration="5935000" />
-      <workItem from="1545308026683" duration="9307000" />
+      <workItem from="1545308026683" duration="9946000" />
     </task>
     <task id="LOCAL-00001" summary="push on dev">
       <created>1543507419388</created>
@@ -613,11 +619,25 @@
       <option name="project" value="LOCAL" />
       <updated>1545318158266</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Essai fix package dev only (pour deploy sur Heroku)">
+      <created>1545318305811</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1545318305811</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Essai fix package dev only (pour deploy sur Heroku)">
+      <created>1545318384580</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1545318384580</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29581000" />
+    <option name="totallyTimeSpent" value="30220000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -637,7 +657,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23549107" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.23549107" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -645,7 +665,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32814237" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32703003" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32700893" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -930,10 +950,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing_dev.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="51" lean-forward="true" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="180">
+          <caret line="33" column="23" lean-forward="true" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
         </state>
       </provider>
     </entry>
