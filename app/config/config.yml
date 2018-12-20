@@ -30,6 +30,8 @@ framework:
     assets: ~
     php_errors:
         log: true
+    templating:
+      engines: ['twig']
 
 # Twig Configuration
 twig:
@@ -49,3 +51,13 @@ swiftmailer:
 sensio_framework_extra:
    router:
         annotations: false
+
+fos_user:
+    db_driver: orm # other valid values are 'mongodb', 'couchdb' and 'propel'
+    firewall_name: main
+    user_class: AppBundle\Entity\User
+    service:
+      mailer: fos_user.mailer.twig_swift
+    from_email:
+      address: "noreply@yourcompany.com"
+      sender_name: "No Reply"
