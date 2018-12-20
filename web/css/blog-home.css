@@ -31,3 +31,8 @@ body {
 .button-create {
   width: 50%;
 }
+
+.button-publish {
+  width: 30%;
+  align-items: center;
+}

@@ -2,19 +2,27 @@
 
 {% block title %}AppBundle:BlogController:creation{% endblock %}
 
+{% form_theme form 'bootstrap_4_layout.html.twig' %}
+
 {% block body %}
 
-
+<div class="col-md-8">
+    <h1 class="my-4">Créez votre article</h1>
     {{ form_start(form) }}
-    {{ form_widget(form) }}
+
+        {{ form_errors(form) }}
+        {{ form_row(form.title) }}
+        {{ form_row(form.content) }}
+        {{ form_row(form.photo_url) }}
+
+        <div class="align-items-center">
+            {{ form_widget(form.save, {'attr':{'class': 'button-publish btn btn-secondary'}}) }}
+        </div>
     {{ form_end(form) }}
-
-
+</div>
  <!--   <div class="col-md-8">
 
-        <h1 class="my-4">Créez votre article
-            <small></small>
-        </h1>
+
 
         <form>
             <div class="form-group">
