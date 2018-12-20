@@ -20,34 +20,34 @@ security:
           id: fos_user.user_provider.username
 
   firewalls:
-        # disables authentication for assets and the profiler, adapt it according to your needs
-        dev:
-            pattern: ^/(_(profiler|wdt)|css|images|js)/
-            security: false
+    # disables authentication for assets and the profiler, adapt it according to your needs
+    dev:
+      pattern: ^/(_(profiler|wdt)|css|images|js)/
+      security: false
 
-        main:
-            anonymous: ~
-            # activate different ways to authenticate
+    main:
+      anonymous: ~
+      # activate different ways to authenticate
 
-            # https://symfony.com/doc/current/security.html#a-configuring-how-your-users-will-authenticate
-            #http_basic: ~
+      # https://symfony.com/doc/current/security.html#a-configuring-how-your-users-will-authenticate
+      #http_basic: ~
 
-            # https://symfony.com/doc/current/security/form_login_setup.html
-            #form_login: ~
+      # https://symfony.com/doc/current/security/form_login_setup.html
+      #form_login: ~
 
-#            pattern: ^/
-#              user_checker: fos_user.user_checker
-#              form_login:
-#                provider: fos_userbundle
-#                csrf_token_generator: security.csrf.token_manager
-#
-#              logout:       true
-#              anonymous:    true
+  #            pattern: ^/
+  #              user_checker: fos_user.user_checker
+  #              form_login:
+  #                provider: fos_userbundle
+  #                csrf_token_generator: security.csrf.token_manager
+  #
+  #              logout:       true
+  #              anonymous:    true
 
-# Access control : Guards
+  # Access control : Guards
 
-  access_control:
-      - { path: ^/login$, role: IS_AUTHENTICATED_ANONYMOUSLY }
+#  access_control:
+#  - { path: ^/login$, role: IS_AUTHENTICATED_ANONYMOUSLY }
 #      - { path: ^/register, role: IS_AUTHENTICATED_ANONYMOUSLY }
 #      - { path: ^/resetting, role: IS_AUTHENTICATED_ANONYMOUSLY }
 #      - { path: ^/admin/, role: ROLE_ADMIN }
