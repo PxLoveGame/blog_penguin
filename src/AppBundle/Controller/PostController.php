@@ -2,6 +2,7 @@
 
 namespace AppBundle\Controller;
 
+use DateTime;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\Form\Extension\Core\Type\FileType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
@@ -36,7 +37,8 @@ class PostController extends Controller
 
             dump($article);
 
-            $article->setPublished(new \DateTime());
+            $date = new DateTime();
+            $article->setPublished($date->format('Y-m-d H:i:s'));
 
             $article->setUrl($article->getTitle());
 

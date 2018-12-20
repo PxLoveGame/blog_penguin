@@ -2,6 +2,7 @@
 
 namespace AppBundle\Controller;
 
+use AppBundle\Entity\Article;
 use AppBundle\Repository\ArticleRepository;
 use Doctrine\ORM\Tools\Pagination\Paginator;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -23,25 +24,16 @@ class BlogController extends Controller
      */
     public function indexActionPage($page)
     {
+        $articles_count= $this->getDoctrine()
+            ->getRepository('AppBundle:Article')
+            ->countPublishedArticles();
 
-        $entityManager = $this->getDoctrine()->getManager();
-
-        $queryBuilder = $entityManager->createQueryBuilder();
-
-        $queryBuilder->select('a')
-            ->from(Article::class, 'a')
-            ->orderBy('a.published', 'DESC');
-
-        $query = $entityManager->createQuery($queryBuilder->getQuery())
-            ->setFirstResult(0)
-            ->setMaxResults(5);
-
-        $paginator = new Paginator($query, $fetchJoinCollection = false);
-        $nb_articles = count($paginator);
+        $article_repo = $this->getDoctrine()->getRepository('AppBundle:Article');
+        $articles = $article_repo->getArticles($page);
 
         return $this->render('index.html.twig', array(
-            "articles" => $paginator,
-            "nb_articles" => $nb_articles
+            "articles" => $articles,
+            "nb_articles" => $articles_count
         ));
     }
 }
