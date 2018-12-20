@@ -65,12 +65,6 @@ class BlogController extends Controller
         ));
     }
 
-
-    public function form_createAction(Request $request)
-    {
-
-    }
-
     /**
      * @Route("/post/{arg}")
      *
