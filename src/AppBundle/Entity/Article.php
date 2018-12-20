@@ -33,7 +33,7 @@ class Article
     protected $title;
 
     /**
-     * @Gedmo\Slug(fields={"title", "id"})
+     * @Gedmo\Slug(fields={"title"})
      * @ORM\Column(type="string", unique=true, nullable=true)
      */
     protected $url;

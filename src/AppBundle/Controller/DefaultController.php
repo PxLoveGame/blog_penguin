@@ -8,14 +8,14 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class DefaultController extends Controller
 {
-    /**
-     * @Route("/")
-     */
-    public function indexAction(Request $request)
-    {
-        // replace this example code with whatever you need
-        return $this->render('default/base.html.twig.twig', [
-            'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
-        ]);
-    }
+//    /**
+//     * @Route("/")
+//     */
+//    public function indexAction(Request $request)
+//    {
+//         replace this example code with whatever you need
+//        return $this->render('default/base.html.twig.twig', [
+//            'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
+//        ]);
+//    }
 }

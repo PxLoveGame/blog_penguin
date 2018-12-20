@@ -2,16 +2,10 @@
 
 namespace AppBundle\Controller;
 
-use AppBundle\Entity\Article;
-
+use AppBundle\Repository\ArticleRepository;
+use Doctrine\ORM\Tools\Pagination\Paginator;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\Form\Extension\Core\Type\SubmitType;
-use Symfony\Component\Form\Extension\Core\Type\TextareaType;
-use Symfony\Component\Form\Extension\Core\Type\TextType;
-use Symfony\Component\Form\Extension\Core\Type\UrlType;
-use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
-
 
 
 class BlogController extends Controller
@@ -21,74 +15,33 @@ class BlogController extends Controller
      */
     public function indexAction()
     {
-        $articles = [];
+        return $this->indexActionPage(1);
+    }
 
+    /**
+     * @Route("/{page}")
+     */
+    public function indexActionPage($page)
+    {
 
+        $entityManager = $this->getDoctrine()->getManager();
+
+        $queryBuilder = $entityManager->createQueryBuilder();
+
+        $queryBuilder->select('a')
+            ->from(Article::class, 'a')
+            ->orderBy('a.published', 'DESC');
+
+        $query = $entityManager->createQuery($queryBuilder->getQuery())
+            ->setFirstResult(0)
+            ->setMaxResults(5);
+
+        $paginator = new Paginator($query, $fetchJoinCollection = false);
+        $nb_articles = count($paginator);
 
         return $this->render('index.html.twig', array(
-            "articles" => $articles
-
+            "articles" => $paginator,
+            "nb_articles" => $nb_articles
         ));
     }
-
-    /**
-     * @Route("/create", name="goto_create")
-     */
-    public function createAction(Request $request)
-    {
-        $article = new Article();
-
-        $form = $this->createFormBuilder($article)
-            ->add('title', TextType::class)
-            ->add('content', TextareaType::class)
-            ->add('photo_url', UrlType::class)
-            ->add('save', SubmitType::class, array('label' => 'Publier'))
-            ->getForm();
-
-        $form->handleRequest($request);
-
-        if ($form->isSubmitted() && $form->isValid()) {
-
-            $article = $form->getData();
-
-            dump($article);
-
-            $entityManager = $this->getDoctrine()->getManager();
-            $entityManager->persist($article);
-            $entityManager->flush();
-
-            return $this->redirectToRoute('task_success');
-        }
-
-        return $this->render('create.html.twig', array(
-            'form' => $form->createView(),
-        ));
-    }
-
-    /**
-     * @Route("/post/{arg}")
-     *
-     */
-    public function postAction($arg)
-    {
-        return $this->render('post.html.twig', array(
-            "arg" => $arg
-        ));
-    }
-
-    /**
-     * @Route("/populate")
-     */
-    public function populateAction()
-    {
-        $articles = [];
-
-
-
-        return $this->render('index.html.twig', array(
-            "articles" => $articles
-
-        ));
-    }
-
 }
