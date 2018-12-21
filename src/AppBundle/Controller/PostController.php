@@ -117,5 +117,21 @@ class PostController extends Controller
         ));
     }
 
+    /**
+     * @Route("/post/delete/{id}")
+     * @param $id
+     */
+    public function deletePost($id){
+        $entityManager = $this->getDoctrine()->getManager();
+        $article = $entityManager->getRepository(Article::class)->find($id);
 
+        if(!$article) {
+            throw $this->createNotFoundException('No article found for id', $id);
+        }
+
+        $entityManager->remove($article);
+        $entityManager->flush();
+
+        return $this->redirectToRoute('homepage');
+    }
 }
