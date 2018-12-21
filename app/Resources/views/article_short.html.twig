@@ -6,7 +6,7 @@
         <p class="card-text article-text">{{ article.getContent() }}</p>
         <a href="#" class="btn btn-primary">Read More &rarr;</a>
         <a href="#" class="btn btn-danger float-right mx-1">Delete</a>
-        <a href="#" class="btn btn-warning float-right mx-1">Edit</a>
+        <a href="/post/edit/{{ article.getId() }}" class="btn btn-warning float-right mx-1">Edit</a>
     </div>
     <div class="card-footer text-muted">
         Posted on {{ article.published | date('Y-m-d H:i:s')}}

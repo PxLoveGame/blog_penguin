@@ -63,12 +63,57 @@ class PostController extends Controller
 
     /**
      * @Route("/post/{arg}")
-     *
      */
     public function postAction($arg)
     {
         return $this->render('post.html.twig', array(
             "arg" => $arg
+        ));
+    }
+
+    /**
+     * @Route("/post/edit/{id}")
+     */
+    public function EditPost($id, Request $request)
+    {
+        $entityManager = $this->getDoctrine()->getManager();
+        $article = $entityManager->getRepository(Article::class)->find($id);
+
+        if(!$article) {
+            throw $this->createNotFoundException('No article found for id', $id);
+        }
+
+        $data_form = new Article();
+        $data_form->setContent($article->getContent());
+
+        $form = $this->createFormBuilder($data_form)
+            ->add('content', TextareaType::class , array('label' => 'Contenu', 'required' => false))
+            ->add('photo_url', FileType::class, array('label' => 'Image', 'required' => false))
+            ->add('save', SubmitType::class, array('label' => 'Modifier'))
+            ->getForm();
+
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+
+            if($form['content']->getData() != null){
+                $article->setContent($form['content']->getData());
+            }
+
+            if($form['photo_url']->getData()){
+                $article->setPhotoUrl($form['photo_url']->getData());
+            }
+
+            dump($article);
+
+            $entityManager->flush();
+
+            return $this->redirectToRoute('homepage');
+        }
+
+        return $this->render('edit.html.twig', array(
+            'form' => $form->createView(),
+            'article' => $article
         ));
     }
 
