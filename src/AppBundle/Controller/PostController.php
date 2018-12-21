@@ -2,6 +2,7 @@
 
 namespace AppBundle\Controller;
 
+use AppBundle\Entity\Article;
 use DateTime;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\Form\Extension\Core\Type\FileType;
@@ -15,7 +16,7 @@ class PostController extends Controller
 {
 
     /**
-     * @Route("/create", name="goto_create")
+     * @Route("/post/create", name="goto_create")
      */
     public function createAction(Request $request)
     {

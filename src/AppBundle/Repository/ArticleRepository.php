@@ -14,7 +14,7 @@ use Doctrine\ORM\Tools\Pagination\Paginator;
 class ArticleRepository extends EntityRepository
 {
 
-    public function getArticles($page = 1, $maxperpage = 5){
+    public function getArticles($page = 1, $maxperpage = 3){
 
         $q = $this->_em->createQueryBuilder()
             ->select('article')

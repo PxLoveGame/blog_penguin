@@ -28,12 +28,16 @@ class BlogController extends Controller
             ->getRepository('AppBundle:Article')
             ->countPublishedArticles();
 
+        $nb_pages = intval($articles_count / 3);
+
         $article_repo = $this->getDoctrine()->getRepository('AppBundle:Article');
         $articles = $article_repo->getArticles($page);
 
         return $this->render('index.html.twig', array(
             "articles" => $articles,
-            "nb_articles" => $articles_count
+            "nb_articles" => $articles_count,
+            "nb_pages" => $nb_pages,
+            "current_page" => $page
         ));
     }
 }
