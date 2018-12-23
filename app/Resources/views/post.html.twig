@@ -3,6 +3,26 @@
 {% block title %}AppBundle:BlogController:post{% endblock %}
 
 {% block body %}
-<h1>Welcome to the BlogController:post page</h1>
-    <h2>{{ arg | upper }}</h2>
+        <div class="spacer"></div>
+        <div class="card mb-4">
+
+            <img class="card-img-top" height="400" src="{{ asset(article.getPhotoUrl()) }}" alt="Card image cap">
+
+            <div class="card-header">
+                <h1 class="card-title">{{ article.title | upper}}</h1>
+                <strong class="float-right">{{ article.published | date('Y-m-d H:i:s') }}</strong>
+            </div>
+
+            <div class="card-body">
+
+                <strong class="card-text">
+                    {{ article.content }}
+                </strong>
+            </div>
+
+            <div class="card-footer">
+                <a href="/post/edit/{{ article.getId() }}" class="btn btn-warning float-right mx-1">Edit</a>
+                <a href="/post/delete/{{ article.getId() }}" class="btn btn-danger float-right mx-1">Delete</a>
+            </div>
+        </div>
 {% endblock %}

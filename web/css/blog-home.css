@@ -23,10 +23,17 @@ body {
   background-color: rgba(52, 58, 64, 255);
 }
 
-.article-text {
+.article-text-short {
   font-size: large;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 650px;
 }
 
+.spacer {
+  margin-top: 3%;
+}
 
 .button-create {
   width: 50%;

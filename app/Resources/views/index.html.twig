@@ -2,11 +2,10 @@
 
 {% block title %}AppBundle:BlogController:index{% endblock %}
 
+
 {% block body %}
 
     <!-- Blog Entries Column -->
-    <div class="col-md-8">
-
         <h1 class="my-4">Les articles phare de la semaine
             <small></small>
         </h1>
@@ -50,6 +49,20 @@
                 </li>
             {% endif %}
         </ul>
+{% endblock %}
 
+{% block sidebar %}
+    <div class="card-body">
+
+        {{ form_start(form) }}
+        {{ form_errors(form) }}
+
+        <div class="input-group">
+            {{ form_widget(form.title, {'attr' : {'class' : 'form-control', 'placeholder' : 'Tapez le titre de votre article...'}}) }}
+            <span class="input-group-btn">
+                  {{ form_widget(form.save, {'attr' : {'class' : 'btn btn-secondary'}})}}
+                </span>
+        </div>
+        {{ form_end(form) }}
     </div>
 {% endblock %}

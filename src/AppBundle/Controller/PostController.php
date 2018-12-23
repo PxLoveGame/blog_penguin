@@ -39,7 +39,9 @@ class PostController extends Controller
             dump($article);
 
             $date = new DateTime();
-            $article->setPublished($date->format('Y-m-d H:i:s'));
+            $article->setPublished($date);
+
+            dump($article);
 
             $article->setUrl($article->getTitle());
 
@@ -133,5 +135,22 @@ class PostController extends Controller
         $entityManager->flush();
 
         return $this->redirectToRoute('homepage');
+    }
+
+    /**
+     * @Route("/post/search/{name}", name="search" )
+     */
+    public function searchByName($name){
+
+        $repository = $this->getDoctrine()->getRepository(Article::class);
+        $article = $repository->findOneBy(['title' => $name]);
+
+        if (!$article) {
+            throw $this->createNotFoundException(
+                'No product found for title ' . $article->getTitle()
+            );
+        } else {
+            return $this->render('post.html.twig', ['article' => $article]);
+        }
     }
 }
