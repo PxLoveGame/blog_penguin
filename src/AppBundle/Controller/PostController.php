@@ -25,7 +25,7 @@ class PostController extends Controller
         $form = $this->createFormBuilder($article)
             ->add('title', TextType::class, array('label' => 'Titre'))
             ->add('content', TextareaType::class , array('label' => 'Contenu'))
-            ->add('photo_url', FileType::class, array('label' => 'Image'))
+            ->add('photo_url', FileType::class, array('label' => 'Image', 'required' => false))
             ->add('save', SubmitType::class, array('label' => 'Publier'))
             ->getForm();
 
@@ -36,6 +36,18 @@ class PostController extends Controller
             $article = $form->getData();
             $photo = $form['photo_url']->getData();
 
+            if($photo == null){
+                $photo = 'img/default_picture.jpg';
+                $article->setPhotoUrl($photo);
+            }
+            else {
+                $directory = 'img/articles';
+                $fileName = md5(uniqid()).'.'.$photo->guessExtension();
+
+                $article->setPhotoUrl($directory.'/'.$fileName);
+                $photo->move($directory, $fileName);
+            }
+
             dump($article);
 
             $date = new DateTime();
@@ -45,15 +57,16 @@ class PostController extends Controller
 
             $article->setUrl($article->getTitle());
 
-            $directory = 'img/articles';
-            $fileName = md5(uniqid()).'.'.$photo->guessExtension();
 
-            $article->setPhotoUrl($directory.'/'.$fileName);
-            $photo->move($directory, $fileName);
 
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($article);
             $entityManager->flush();
+
+            $this->addFlash(
+                'success',
+                'L\'article a bien été créé !'
+            );
 
             return $this->redirectToRoute('homepage');
         }
@@ -103,8 +116,20 @@ class PostController extends Controller
             }
 
             if($form['photo_url']->getData()){
-                $article->setPhotoUrl($form['photo_url']->getData());
+
+                $photo = $form['photo_url']->getData();
+
+                $directory = 'img/articles';
+                $fileName = md5(uniqid()).'.'.$photo->guessExtension();
+                $photo->move($directory, $fileName);
+
+                $article->setPhotoUrl($directory.'/'.$fileName);
             }
+
+            $this->addFlash(
+                'success',
+                'L\'article a bien été modifié !'
+            );
 
             dump($article);
 
@@ -128,11 +153,22 @@ class PostController extends Controller
         $article = $entityManager->getRepository(Article::class)->find($id);
 
         if(!$article) {
+
+            $this->addFlash(
+                'notice',
+                'Impossible de supprimer l\'article !'
+            );
+
             throw $this->createNotFoundException('No article found for id', $id);
         }
 
         $entityManager->remove($article);
         $entityManager->flush();
+
+        $this->addFlash(
+            'success',
+            'l\'article à bien été supprimé !'
+        );
 
         return $this->redirectToRoute('homepage');
     }
@@ -146,9 +182,14 @@ class PostController extends Controller
         $article = $repository->findOneBy(['title' => $name]);
 
         if (!$article) {
-            throw $this->createNotFoundException(
-                'No product found for title ' . $article->getTitle()
+
+            $this->addFlash(
+                'notice',
+                'Aucun article n\'a été trouvé pour le titre : '.$name
             );
+
+            return $this->redirectToRoute('homepage');
+
         } else {
             return $this->render('post.html.twig', ['article' => $article]);
         }

@@ -33,7 +33,7 @@ class ArticleFixtures extends Fixture
             $article->setContent('Lorem ipsum dolor sit amet et consecuetir');
             $date = mt_rand(1, 28) . '-' . mt_rand(1, 12) . '-' . mt_rand(2013, 2018);
             $article->setPublished( new \DateTime($date) );
-            $article->setPhotoUrl('img/penguins-family.jpg');
+            $article->setPhotoUrl('img/default_picture.jpg');
 
 
             $manager->persist($article);

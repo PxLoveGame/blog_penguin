@@ -9,7 +9,7 @@
             <img class="card-img-top" height="400" src="{{ asset(article.getPhotoUrl()) }}" alt="Card image cap">
 
             <div class="card-header">
-                <h1 class="card-title">{{ article.title | upper}}</h1>
+                <h1 class="card-title">{{ article.title }}</h1>
                 <strong class="float-right">{{ article.published | date('Y-m-d H:i:s') }}</strong>
             </div>
 
