@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3fcef8eb-0ac6-4dbe-a8e9-da392ba4124e" name="Default Changelist" comment="">
+    <list default="true" id="3fcef8eb-0ac6-4dbe-a8e9-da392ba4124e" name="Default Changelist" comment="minor fix (background)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/post.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/post.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/DataFixtures/ArticleFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/DataFixtures/ArticleFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/img/penguins-family.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/default_picture.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/blog-home.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/blog-home.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,8 +21,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="842">
-              <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
+            <state relative-caret-position="136">
+              <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/css/blog-home.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="376">
+              <caret line="24" column="2" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -33,74 +39,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
+            <state relative-caret-position="-75">
               <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/ArticleRepository.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="20" column="49" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/PostController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="123" column="52" selection-start-line="123" selection-start-column="52" selection-end-line="123" selection-end-column="52" />
-              <folding>
-                <element signature="e#40#69#0#PHP" expanded="true" />
-                <element signature="e#2002#2138#0#PHP" />
-                <element signature="e#3610#3626#0#PHP" expanded="true" />
-                <element signature="e#5010#5026#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/post.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="56" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
-              <folding>
-                <element signature="e#12#26#0#Twig" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/article_short.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="55" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/css/blog-home.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/BlogController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="54" column="41" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
-              <folding>
-                <element signature="e#40#69#0#PHP" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -132,7 +72,6 @@
         <option value="$PROJECT_DIR$/tests/AppBundle/Controller/BlogControllerTest.php" />
         <option value="$PROJECT_DIR$/temporary/startbootstrap-blog-home-gh-pages/index.html" />
         <option value="$PROJECT_DIR$/app/Resources/views/base(2).html.twig" />
-        <option value="$PROJECT_DIR$/web/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/ArticleEntity.php" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
@@ -142,16 +81,17 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Repository/ArticleRepository.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/form/postFields.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/UserController.php" />
-        <option value="$PROJECT_DIR$/app/Resources/views/article_short.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/search.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/BlogController.php" />
-        <option value="$PROJECT_DIR$/app/Resources/views/index.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/create.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/edit.html.twig" />
-        <option value="$PROJECT_DIR$/web/css/blog-home.css" />
         <option value="$PROJECT_DIR$/app/Resources/views/post.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/PostController.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/article_short.html.twig" />
+        <option value="$PROJECT_DIR$/web/css/bootstrap.min.css" />
+        <option value="$PROJECT_DIR$/app/Resources/views/index.html.twig" />
+        <option value="$PROJECT_DIR$/web/css/blog-home.css" />
       </list>
     </option>
   </component>
@@ -254,6 +194,19 @@
               <item name="blog_penguin" type="b2602c69:ProjectViewProjectNode" />
               <item name="blog_penguin" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog_penguin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog_penguin" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap.min.css" type="620a8d5e:NestingTreeNode" />
+            </path>
+            <path>
+              <item name="blog_penguin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog_penguin" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -325,7 +278,7 @@
       <option name="presentableId" value="Default" />
       <updated>1543505495948</updated>
       <workItem from="1543505497121" duration="5935000" />
-      <workItem from="1545308167280" duration="52720000" />
+      <workItem from="1545308167280" duration="54546000" />
     </task>
     <task id="LOCAL-00001" summary="push on dev">
       <created>1543507419388</created>
@@ -418,11 +371,25 @@
       <option name="project" value="LOCAL" />
       <updated>1545587729662</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add flash notification">
+      <created>1545593776246</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1545593776247</updated>
+    </task>
+    <task id="LOCAL-00015" summary="minor fix (background)">
+      <created>1545595238465</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1545595238465</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77395000" />
+    <option name="totallyTimeSpent" value="79221000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -437,7 +404,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2375189" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2375189" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -474,7 +441,9 @@
     <MESSAGE value="add edition for articles" />
     <MESSAGE value="add deletion for articles" />
     <MESSAGE value="some fix (date format, responsive, layout) &#10;Add research by name." />
-    <option name="LAST_COMMIT_MESSAGE" value="some fix (date format, responsive, layout) &#10;Add research by name." />
+    <MESSAGE value="add flash notification" />
+    <MESSAGE value="minor fix (background)" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor fix (background)" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/tests/AppBundle/Controller/BlogControllerTest.php">
@@ -525,23 +494,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/AppBundle.php">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="5" column="34559" selection-start-line="5" selection-start-column="34559" selection-end-line="5" selection-end-column="34559" />
-          <folding>
-            <element signature="e#58784#58984#2" expanded="true" />
-            <element signature="e#59192#59341#2" expanded="true" />
-            <element signature="e#59843#59989#2" expanded="true" />
-            <element signature="e#60290#60456#1" expanded="true" />
-            <element signature="e#71108#71351#2" expanded="true" />
-            <element signature="e#72218#72467#2" expanded="true" />
-            <element signature="e#99254#99444#2" expanded="true" />
-            <element signature="e#99490#99680#2" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/css/bootstrap.css" />
     <entry file="file://$PROJECT_DIR$/composer.json">
@@ -666,34 +618,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/blog-home.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="842">
-          <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/article_short.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="55" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/post.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -703,6 +627,27 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/article_short.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="5" column="72604" selection-start-line="5" selection-start-column="72604" selection-end-line="5" selection-end-column="72604" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/bootstrap.min.css.map">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="sourcemapFileViewerProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/penguin_background.jpg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/PostController.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -714,6 +659,27 @@
             <element signature="e#3610#3626#0#PHP" expanded="true" />
             <element signature="e#5010#5026#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-75">
+          <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/blog-home.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="24" column="2" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
         </state>
       </provider>
     </entry>

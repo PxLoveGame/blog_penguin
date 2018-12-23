@@ -19,6 +19,15 @@ body {
   }
 }
 
+.title {
+  text-align: center;
+  color: white;
+
+  background-color: rgba(52, 58, 64, 255);
+  border-radius: 25px;
+
+}
+
 .widget-color {
   color: white;
   background-color: rgba(52, 58, 64, 255);
