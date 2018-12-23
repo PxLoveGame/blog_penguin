@@ -6,10 +6,11 @@
 
 body {
   padding-top: 54px;
-  /*background-image: url("../img/penguin_background.jpg");*/
-  background-size: cover;
+  background-image: url("../img/penguin_background2.jpg");
   /*background-position: left top;*/
-  /*background-repeat: no-repeat;*/
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
 }
 
 @media (min-width: 992px) {
