@@ -22,6 +22,19 @@ class PostController extends Controller
     {
         $article = new Article();
 
+        // search form
+        $searchForm = $this->createFormBuilder($article)
+            ->add('title', TextType::class, array('label' => '' ))
+            ->add('save', SubmitType::class, array('label' => 'Go!'))
+            ->getForm();
+
+        $searchForm->handleRequest($request);
+
+        if ($searchForm->isSubmitted() && $searchForm->isValid()) {
+            return $this->redirect($this->generateUrl('search', array('name' => $searchForm['title']->getData())));
+        }
+
+        // create form
         $form = $this->createFormBuilder($article)
             ->add('title', TextType::class, array('label' => 'Titre'))
             ->add('content', TextareaType::class , array('label' => 'Contenu'))
@@ -73,16 +86,32 @@ class PostController extends Controller
 
         return $this->render('create.html.twig', array(
             'form' => $form->createView(),
+            'searchForm' => $searchForm->createView()
         ));
     }
 
     /**
      * @Route("/post/{arg}")
      */
-    public function postAction($arg)
+    public function postAction($arg, Request $request)
     {
+        $article = new Article();
+
+        // search form
+        $searchForm = $this->createFormBuilder($article)
+            ->add('title', TextType::class, array('label' => '' ))
+            ->add('save', SubmitType::class, array('label' => 'Go!'))
+            ->getForm();
+
+        $searchForm->handleRequest($request);
+
+        if ($searchForm->isSubmitted() && $searchForm->isValid()) {
+            return $this->redirect($this->generateUrl('search', array('name' => $searchForm['title']->getData())));
+        }
+
         return $this->render('post.html.twig', array(
-            "arg" => $arg
+            "arg" => $arg,
+            'searchForm' => $searchForm->createView()
         ));
     }
 
@@ -91,6 +120,20 @@ class PostController extends Controller
      */
     public function EditPost($id, Request $request)
     {
+        $article = new Article();
+
+        // search form
+        $searchForm = $this->createFormBuilder($article)
+            ->add('title', TextType::class, array('label' => '' ))
+            ->add('save', SubmitType::class, array('label' => 'Go!'))
+            ->getForm();
+
+        $searchForm->handleRequest($request);
+
+        if ($searchForm->isSubmitted() && $searchForm->isValid()) {
+            return $this->redirect($this->generateUrl('search', array('name' => $searchForm['title']->getData())));
+        }
+
         $entityManager = $this->getDoctrine()->getManager();
         $article = $entityManager->getRepository(Article::class)->find($id);
 
@@ -140,6 +183,7 @@ class PostController extends Controller
 
         return $this->render('edit.html.twig', array(
             'form' => $form->createView(),
+            'searchForm' => $searchForm->createView(),
             'article' => $article
         ));
     }
@@ -176,7 +220,21 @@ class PostController extends Controller
     /**
      * @Route("/post/search/{name}", name="search" )
      */
-    public function searchByName($name){
+    public function searchByName($name, Request $request){
+
+        $article = new Article();
+
+        // search form
+        $searchForm = $this->createFormBuilder($article)
+            ->add('title', TextType::class, array('label' => '' ))
+            ->add('save', SubmitType::class, array('label' => 'Go!'))
+            ->getForm();
+
+        $searchForm->handleRequest($request);
+
+        if ($searchForm->isSubmitted() && $searchForm->isValid()) {
+            return $this->redirect($this->generateUrl('search', array('name' => $searchForm['title']->getData())));
+        }
 
         $repository = $this->getDoctrine()->getRepository(Article::class);
         $article = $repository->findOneBy(['title' => $name]);
@@ -191,7 +249,10 @@ class PostController extends Controller
             return $this->redirectToRoute('homepage');
 
         } else {
-            return $this->render('post.html.twig', ['article' => $article]);
+            return $this->render('post.html.twig', array(
+                'article' => $article,
+                'searchForm' => $searchForm->createView()
+            ));
         }
     }
 }

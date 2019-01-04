@@ -42,7 +42,7 @@ class BlogController extends Controller
         ->getRepository('AppBundle:Article')
         ->countPublishedArticles();
 
-        $nb_pages = intval($articles_count / 3);
+        $nb_pages = ceil($articles_count / 3);
 
         $article_repo = $this->getDoctrine()->getRepository('AppBundle:Article');
         $articles = $article_repo->getArticles($page);

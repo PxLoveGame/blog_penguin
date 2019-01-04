@@ -53,3 +53,20 @@ body {
   width: 30%;
   align-items: center;
 }
+
+.paginator {
+  background-color: rgba(52, 58, 64, 255);
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 5px;
+  color: white;
+}
+
+.form_title{
+  background-color: rgba(52, 58, 64, 255);
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  width: 20%;
+  margin-bottom: 1%;
+}

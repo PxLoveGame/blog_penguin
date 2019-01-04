@@ -11,15 +11,43 @@
     {{ form_start(form) }}
 
     {{ form_errors(form) }}
-    {{ form_row(form.content) }}
 
-    <img class="card-img-top" height="350" src="{{ asset(article.getPhotoUrl()) }}" alt="Card image cap">
-    {{ form_row(form.photo_url) }}
+    <div class="spacer">
+        <div class="form_title spacer">
+            {{ form.content.vars.label }}
+        </div>
+        {{ form_widget(form.content) }}
+    </div>
 
-    <div class="align-items-center">
+    <img class="card-img-top spacer" height="350" src="{{ asset(article.getPhotoUrl()) }}" alt="Card image cap">
+
+    <div class="spacer">
+        <div class="form_title spacer">
+            {{ form.photo_url.vars.label }}
+        </div>
+        {{ form_widget(form.photo_url) }}
+    </div>
+
+    <div class="align-items-center spacer">
         {{ form_widget(form.save, {'attr':{'class': 'button-publish btn btn-secondary'}}) }}
     </div>
     {{ form_end(form) }}
 
 
+{% endblock %}
+
+{% block sidebar %}
+    <div class="card-body">
+
+        {{ form_start(searchForm) }}
+        {{ form_errors(searchForm) }}
+
+        <div class="input-group">
+            {{ form_widget(searchForm.title, {'attr' : {'class' : 'form-control', 'placeholder' : 'Tapez le titre de votre article...'}}) }}
+            <span class="input-group-btn">
+                  {{ form_widget(searchForm.save, {'attr' : {'class' : 'btn btn-secondary'}})}}
+                </span>
+        </div>
+        {{ form_end(searchForm) }}
+    </div>
 {% endblock %}
