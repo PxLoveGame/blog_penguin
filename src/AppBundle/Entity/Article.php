@@ -14,7 +14,7 @@ use Gedmo\Mapping\Annotation as Gedmo;
 /**
  * Class Article
  * @ORM\Entity
- * @ORM\Table(name="article")
+ * @ORM\Table(name="article", options={"collate"="utf8_unicode_ci"})
  * @package AppBundle\Entity
  * @ORM\Entity(repositoryClass="AppBundle\Repository\ArticleRepository")
  */

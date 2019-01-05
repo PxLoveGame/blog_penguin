@@ -36,4 +36,16 @@ class ArticleRepository extends EntityRepository
 
         return $count;
     }
+
+    public function findByName($name){
+        $name = strtolower($name);
+
+            $q = $this->createQueryBuilder('a')
+            ->where('LOWER(a.title) LIKE :title')
+            ->setParameter('title', '%'.$name.'%')
+            ->getQuery()
+            ->getResult();
+        return $q;
+
+    }
 }

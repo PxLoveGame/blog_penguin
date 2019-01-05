@@ -70,3 +70,13 @@ body {
   width: 20%;
   margin-bottom: 1%;
 }
+
+.card-img-top{
+  max-height: 350px;
+  height: auto;
+}
+
+.fa-pad{
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}

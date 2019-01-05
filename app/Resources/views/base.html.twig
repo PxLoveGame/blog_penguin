@@ -11,8 +11,10 @@
     <title>{% block title %}Blog Pingouin - Accueil{% endblock %}</title>
       {% block stylesheets %}{% endblock %}
     <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css" />
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
-
+      {#<link href="{{ asset('bundles/bmatznerfontawesome/css/font-awesome.min.css') }}" rel="stylesheet">#}
+      {#<link href="{{ asset('bundles/bmatznerfontawesome/fonts/fontawesome-webfont.svg') }}" rel="stylesheet">#}
     <!-- Custom styles for this template -->
     <link href="{{ asset('css/blog-home.css') }}" rel="stylesheet">
 
@@ -45,12 +47,29 @@
                 <span class="sr-only">(current)</span>
               </a>
             </li>
+            <li>
+
+              {# Afficher "connecté en tant que XXX" ou "Connexion" #}
+                  {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                    <span class="nav-link" style="font-size: inherit">
+                      <i class="fa fa-pad fa-user"></i>
+                        {{ app.user.username }} |
+                    <a class="nav-link d-inline" href="{{ path('fos_user_security_logout') }}">
+                        {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
+                    </a>
+                      </span>
+                  {% else %}
+                    <a class="nav-link" href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a>
+                  {% endif %}
+              <span class="sr-only">(current)</span>
+
+            </li>
             <!--
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#">Sign In</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="#">Log In</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contact</a>
@@ -76,14 +95,14 @@
           <!-- Search Widget -->
 
           <div class="card my-4">
-            <h5 class="card-header widget-color">Recherche</h5>
+            <h5 class="card-header widget-color"><i class="fa fa-search fa-pad"></i>Recherche</h5>
             {% block sidebar %}
             {% endblock %}
           </div>
 
           <!-- Add article Widget -->
           <div class="card my-4">
-            <h5 class="card-header widget-color">Ajouter un article</h5>
+            <h5 class="card-header widget-color"><i class="fa fa-pad fa-plus"></i>Ajouter un article</h5>
             <div class="card-body">
               <div class="input-group">
                   <a class="button-create mx-auto btn btn-secondary" href="{{ path('goto_create') }}" type="button">Go!</a>

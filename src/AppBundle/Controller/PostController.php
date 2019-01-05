@@ -237,21 +237,29 @@ class PostController extends Controller
         }
 
         $repository = $this->getDoctrine()->getRepository(Article::class);
+        $articles = $repository->findByName($name);
+
         $article = $repository->findOneBy(['title' => $name]);
 
-        if (!$article) {
-
+        if (!$articles){
             $this->addFlash(
                 'notice',
                 'Aucun article n\'a été trouvé pour le titre : '.$name
             );
 
             return $this->redirectToRoute('homepage');
+        }else {
+            $form = $this->createFormBuilder($article)
+                ->add('title', TextType::class, array('label' => '' ))
+                ->add('save', SubmitType::class, array('label' => 'Go!'))
+                ->getForm();
 
-        } else {
-            return $this->render('post.html.twig', array(
-                'article' => $article,
-                'searchForm' => $searchForm->createView()
+            return $this->render('index.html.twig', array(
+                "articles" => $articles,
+                "nb_articles" => count($articles),
+                "nb_pages" => 1,
+                "current_page" => 1,
+                "form" => $form->createView()
             ));
         }
     }
