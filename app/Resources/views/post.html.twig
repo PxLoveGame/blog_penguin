@@ -15,9 +15,9 @@
 
             <div class="card-body">
 
-                <strong class="card-text">
+                <span class="card-text">
                     {{ article.content }}
-                </strong>
+                </span>
             </div>
 
             <div class="card-footer">
@@ -34,7 +34,7 @@
         {{ form_errors(searchForm) }}
 
         <div class="input-group">
-            {{ form_widget(searchForm.title, {'attr' : {'class' : 'form-control', 'placeholder' : 'Tapez le titre de votre article...'}}) }}
+            {{ form_widget(searchForm.title, {'attr' : {'class' : 'form-control', 'placeholder' : 'Titre'}}) }}
             <span class="input-group-btn">
                   {{ form_widget(searchForm.save, {'attr' : {'class' : 'btn btn-secondary'}})}}
                 </span>

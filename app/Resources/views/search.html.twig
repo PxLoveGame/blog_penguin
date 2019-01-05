@@ -1,19 +1,19 @@
 
-{% block sidebar %}
-    <div class="card-body">
+{#{% block sidebar %}#}
+    {#<div class="card-body">#}
 
-        {{ form_start(form) }}
-        {{ form_errors(form) }}
+        {#{{ form_start(form) }}#}
+        {#{{ form_errors(form) }}#}
 
-        <div class="input-group">
-            {{ form_widget(form.title, {'attr' : {'class' : 'form-control', 'placeholder' : 'Tapez le titre de votre article...'}}) }}
-            <span class="input-group-btn">
-                  {{ form_widget(form.save, {'attr' : {'class' : 'btn btn-secondary'}})}}
-                </span>
-        </div>
-        {{ form_end(form) }}
-    </div>
-{% endblock %}
+        {#<div class="input-group">#}
+            {#{{ form_widget(form.title, {'attr' : {'class' : 'form-control', 'placeholder' : 'Tapez le titre de votre article...'}}) }}#}
+            {#<span class="input-group-btn">#}
+                  {#{{ form_widget(form.save, {'attr' : {'class' : 'btn btn-secondary'}})}}#}
+                {#</span>#}
+        {#</div>#}
+        {#{{ form_end(form) }}#}
+    {#</div>#}
+{#{% endblock %}#}
 
 {% block sidebar %}
     <div class="card-body">
@@ -22,7 +22,7 @@
         {{ form_errors(searchForm) }}
 
         <div class="input-group">
-            {{ form_widget(searchForm.title, {'attr' : {'class' : 'form-control', 'placeholder' : 'Tapez le titre de votre article...'}}) }}
+            {{ form_widget(searchForm.title, {'attr' : {'class' : 'form-control', 'placeholder' : 'Titre'}}) }}
             <span class="input-group-btn">
                   {{ form_widget(searchForm.save, {'attr' : {'class' : 'btn btn-secondary'}})}}
                 </span>

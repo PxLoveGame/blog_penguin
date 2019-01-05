@@ -28,17 +28,15 @@ Auteurs : Anthony Chaillot, Theo Kriszt
 -[x] Check la recherche d'article 
 -[ ] Ajouter des tags aux articles 
 -[ ] Ajouter une vraie recherche par tags
--[ ] Bosser les articles de facon sémantique (article, content, etc.) 
+-[ ] Bosser les articles de facon sémantique (article, content, etc.)
+-[ ] Virer catégories et rzemplacer par derniersd messages 
 
 ##Bonus :
 -[ ] Faire une auth via Google/facebook
 -[ ] Une page 404
+-[ ] Traducions
 ## CSS
--[ ] eviter de compresser/déformer les photos quand ecran trop petit
+-[x] eviter de compresser/déformer les photos quand ecran trop petit
 -[ ] Pousser le CSS de base
 -[ ] Interface Admin
 -[ ] Inscription Users
-
-
-
-

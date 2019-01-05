@@ -51,6 +51,7 @@ class PostController extends Controller
 
             if($photo == null){
                 $photo = 'img/default_picture.jpg';
+                $photo = null;
                 $article->setPhotoUrl($photo);
             }
             else {
@@ -61,12 +62,12 @@ class PostController extends Controller
                 $photo->move($directory, $fileName);
             }
 
-            dump($article);
+//            dump($article);
 
             $date = new DateTime();
             $article->setPublished($date);
 
-            dump($article);
+//            dump($article);
 
             $article->setUrl($article->getTitle());
 
@@ -95,7 +96,10 @@ class PostController extends Controller
      */
     public function postAction($arg, Request $request)
     {
-        $article = new Article();
+
+        $repository = $this->getDoctrine()->getRepository(Article::class);
+        $article = $repository->findByName($arg)[0];
+//        dump($article);
 
         // search form
         $searchForm = $this->createFormBuilder($article)
@@ -111,6 +115,7 @@ class PostController extends Controller
 
         return $this->render('post.html.twig', array(
             "arg" => $arg,
+            'article'=> $article,
             'searchForm' => $searchForm->createView()
         ));
     }

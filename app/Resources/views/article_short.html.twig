@@ -1,10 +1,10 @@
 <!-- Blog Post -->
 <div class="card mb-4">
-    <img class="card-img-top" src="{{ asset(article.getPhotoUrl()) }}" alt="Card image cap">
+    <img class="card-img-top" src="{{ asset(article.getPhotoUrl()) }}" alt="">
     <div class="card-body">
         <h2 class="card-title">{{ article.getTitle() }}</h2>
         <p class="card-text article-text-short">{{ article.getContent() }}</p>
-        <a href="/post/search/{{ article.getTitle() }}" class="btn btn-primary">Read More &rarr;</a>
+        <a href="/post/{{ article.getTitle() }}" class="btn btn-primary">Read More &rarr;</a>
         <a href="/post/delete/{{ article.getId() }}" class="btn btn-danger float-right mx-1 fa fa-remove"> Delete</a>
         <a href="/post/edit/{{ article.getId() }}" class="btn btn-warning float-right mx-1 fa fa-edit"> Edit</a>
     </div>

@@ -6,9 +6,9 @@
 {% block body %}
 
     <!-- Blog Entries Column -->
-        <h1 class="my-4 title"> Voici les derniers articles !
+        {#<h1 class="my-4 title"> Voici les derniers articles !#}
             {#<small>Hello ?</small>#}
-        </h1>
+        {#</h1>#}
 
         {% for article in articles %}
             {% include 'article_short.html.twig'
@@ -17,13 +17,13 @@
         {% endfor %}
 
         <!-- Pagination -->
-        <div class="text-center paginator">
-            <div>
-                <small>Nombre total d'articles : {{ nb_articles }}</small>
-                <small>Nombre total de pages : {{ nb_pages }}</small>
-            </div>
-            <strong>Page courante : {{ current_page }}</strong>
-        </div>
+        {#<div class="text-center paginator">#}
+            {#<div>#}
+                {#<small>Nombre total d'articles : {{ nb_articles }}</small>#}
+                {#<small>Nombre total de pages : {{ nb_pages }}</small>#}
+            {#</div>#}
+            {#<strong>Page courante : {{ current_page }}</strong>#}
+        {#</div>#}
 
         <ul class="pagination justify-content-center mb-4">
             {% if current_page == 1 %}
@@ -58,7 +58,7 @@
         {{ form_errors(form) }}
 
         <div class="input-group">
-            {{ form_widget(form.title, {'attr' : {'class' : 'form-control', 'placeholder' : 'Tapez le titre de votre article...'}}) }}
+            {{ form_widget(form.title, {'attr' : {'class' : 'form-control', 'placeholder' : 'Titre'}}) }}
             <span class="input-group-btn">
                   {{ form_widget(form.save, {'attr' : {'class' : 'btn btn-secondary'}})}}
                 </span>

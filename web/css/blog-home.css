@@ -13,6 +13,10 @@ body {
   background-attachment: fixed;
 }
 
+/*html,body{*/
+  /*height: 100%*/
+/*}*/
+
 @media (min-width: 992px) {
   body {
     padding-top: 56px;
@@ -79,4 +83,65 @@ body {
 .fa-pad{
   padding-left: 0.5em;
   padding-right: 0.5em;
+}
+
+.heading {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+.formulaire {
+  background-color: whitesmoke;
+  font-size: large;
+  border: 1px solid gainsboro;
+  padding: 45px 50px;
+  border-radius: 10px;
+  margin: 0 auto;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 255, .2);
+}
+.custom-input{
+  margin: 15px 0;
+  /*font-size: 14px;*/
+}
+.custom-input label{
+  display: block;
+  margin: 0;
+}
+.custom-input input, .custom-input input:focus{
+  display: block;
+  background-color: white !important;
+  border-radius: 5px;
+  padding: 10px 15px;
+  border: 1px solid gainsboro;
+  font-size: 18px;
+}
+.custom-checkbox label{
+  font-weight: 500;
+  font-size: 16px;
+  vertical-align: top;
+  margin: 0;
+}
+.custom-link a{
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.custom-button {
+  border-radius: 5px;
+  border: none !important;
+  padding: 5px 20px ;
+  box-shadow: none !important;
+  background: dodgerblue;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: inherit !important;
+  cursor: pointer;
+  transition: 0.3s;
+  vertical-align: top;
+  text-align: right;
+}
+.custom-button:hover, .custom-button:focus {
+  background: royalblue;
 }
