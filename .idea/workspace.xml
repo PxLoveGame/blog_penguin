@@ -3,109 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3fcef8eb-0ac6-4dbe-a8e9-da392ba4124e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.af.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.ar.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.bg.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.bn.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.bn_BD.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.ca.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.cs.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.da.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.de.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.el.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.en.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.eo.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.es.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.et.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.eu.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.fa.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.fi.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.fr.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.gl.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.he.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.hr.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.hu.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.id.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.it.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.ja.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.ky.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.lb.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.lt.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.lv.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.nb.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.nl.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.pl.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.pt.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.pt_BR.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.ro.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.ru.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.sk.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.sl.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.sr_Latn.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.sv.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.th.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.tr.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.uk.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.vi.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.zh_CN.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.ar.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.bg.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.bn.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.bn_BD.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.ca.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.cs.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.da.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.de.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.el.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.en.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.eo.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.es.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.eu.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.fa.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.fi.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.fr.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.he.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.hr.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.hu.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.id.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.it.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.ja.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.ky.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.lt.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.lv.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.nb.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.nl.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.pl.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.pt.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.pt_BR.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.ro.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.ru.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.sk.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.sl.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.sr_Latn.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.sv.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.th.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.tr.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.uk.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.vi.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.zh_CN.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register_content.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register_content.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login_content.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login_content.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/article_short.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/article_short.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/create.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/create.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/edit.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/post.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/post.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/search.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/search.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/security.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/security.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/DataFixtures/ArticleFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/DataFixtures/ArticleFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Article.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/blog-home.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/blog-home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -152,8 +50,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+            <state relative-caret-position="323">
+              <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
               <folding>
                 <element signature="e#12#26#0#Twig" expanded="true" />
               </folding>
@@ -164,17 +62,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="193" column="23" selection-start-line="193" selection-start-column="22" selection-end-line="193" selection-end-column="23" />
+            <state relative-caret-position="117">
+              <caret line="105" selection-start-line="105" selection-end-line="105" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Article.php">
+        <entry file="file://$PROJECT_DIR$/Procfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="42" column="47" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
+            <state>
+              <caret column="27" lean-forward="true" selection-start-column="27" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3893">
+              <caret line="43" column="33" lean-forward="true" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/app.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/app_dev.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
             </state>
           </provider>
         </entry>
@@ -189,31 +114,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/DataFixtures/ArticleFixtures.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/post.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/article_short.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-              <folding>
-                <element signature="e#394#400#0#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="153">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -227,11 +131,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/PostController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="113" column="9" selection-start-line="113" selection-start-column="9" selection-end-line="113" selection-end-column="9" />
+            <state relative-caret-position="192">
+              <caret line="107" column="24" selection-start-line="107" selection-start-column="24" selection-end-line="107" selection-end-column="24" />
               <folding>
                 <element signature="e#40#69#0#PHP" expanded="true" />
                 <element signature="e#3575#3591#0#PHP" expanded="true" />
@@ -240,22 +144,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/css/blog-home.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="17" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>getManagerName</find>
-      <find>doctrine:</find>
-      <find>orm</find>
       <find>orm:</find>
       <find>Please sign in</find>
       <find>&lt;a href=&quot;/lo</find>
@@ -283,6 +175,9 @@
       <find>post.html</find>
       <find>fin</find>
       <find>reposito</find>
+      <find>Read Mo</find>
+      <find>Voici les d</find>
+      <find>Titre</find>
     </findStrings>
     <replaceStrings>
       <replace>form</replace>
@@ -326,24 +221,24 @@
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/app/config/config_prod.yml" />
-        <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register_content.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login_content.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/post.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/create.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/edit.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/search.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig" />
         <option value="$PROJECT_DIR$/app/config/security.yml" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Article.php" />
-        <option value="$PROJECT_DIR$/app/Resources/views/article_short.html.twig" />
         <option value="$PROJECT_DIR$/web/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/web/css/blog-home.css" />
-        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/index.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/DataFixtures/ArticleFixtures.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/PostController.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/article_short.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/post.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/index.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+        <option value="$PROJECT_DIR$/Procfile" />
       </list>
     </option>
   </component>
@@ -437,38 +332,7 @@
             <path>
               <item name="blog_penguin" type="b2602c69:ProjectViewProjectNode" />
               <item name="blog_penguin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog_penguin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog_penguin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="AppBundle" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog_penguin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog_penguin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="AppBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="DataFixtures" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog_penguin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog_penguin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="AppBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog_penguin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog_penguin" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog_penguin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog_penguin" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -488,6 +352,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Utilisateur\PhpstormProjects\blog_penguin" />
       <recent name="C:\Users\Utilisateur\PhpstormProjects\blog_penguin\app\Resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -560,7 +425,7 @@
       <workItem from="1546641828341" duration="84000" />
       <workItem from="1546669723703" duration="4537000" />
       <workItem from="1546674305443" duration="98000" />
-      <workItem from="1546674420647" duration="21104000" />
+      <workItem from="1546674420647" duration="21654000" />
     </task>
     <task id="LOCAL-00001" summary="push on dev">
       <created>1543507419388</created>
@@ -730,11 +595,25 @@
       <option name="project" value="LOCAL" />
       <updated>1546699938703</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Droits de creation d'article">
+      <created>1546708102715</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1546708102715</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Test procfile">
+      <created>1546708209290</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1546708209290</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121721000" />
+    <option name="totallyTimeSpent" value="122271000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -749,12 +628,12 @@
     <frame x="960" y="0" width="960" height="1040" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24333334" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24333334" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3225108" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4975" visible="true" weight="0.39207047" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4975" weight="0.39207047" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -796,36 +675,11 @@
     <MESSAGE value="doctrine alias : correction env. prod access BD heroku" />
     <MESSAGE value="doctrine orm : correction env. prod access BD heroku" />
     <MESSAGE value="DB : changement credentials postGre" />
-    <option name="LAST_COMMIT_MESSAGE" value="DB : changement credentials postGre" />
+    <MESSAGE value="Droits de creation d'article" />
+    <MESSAGE value="Test procfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test procfile" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
-          <folding>
-            <element signature="e#7#66#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/bundles/bmatznerfontawesome/css/font-awesome.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="55" lean-forward="true" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/RegistrationType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="36" column="7" selection-start-line="33" selection-start-column="14" selection-end-line="36" selection-end-column="7" />
-          <folding>
-            <element signature="e#121#161#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/bundles/bmatznerfontawesome/fonts/4.4.0/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -918,13 +772,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="35" selection-start-column="35" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -1118,23 +965,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="193" column="23" selection-start-line="193" selection-start-column="22" selection-end-line="193" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
-          <folding>
-            <element signature="e#12#26#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Article.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -1156,27 +986,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/article_short.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-          <folding>
-            <element signature="e#394#400#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/search.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/post.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -1189,12 +1002,74 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/PostController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="113" column="9" selection-start-line="113" selection-start-column="9" selection-end-line="113" selection-end-column="9" />
+        <state relative-caret-position="192">
+          <caret line="107" column="24" selection-start-line="107" selection-start-column="24" selection-end-line="107" selection-end-column="24" />
           <folding>
             <element signature="e#40#69#0#PHP" expanded="true" />
             <element signature="e#3575#3591#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/article_short.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="6" lean-forward="true" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+          <folding>
+            <element signature="e#394#400#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/post.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="105" selection-start-line="105" selection-end-line="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="27" lean-forward="true" selection-start-column="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3893">
+          <caret line="43" column="33" lean-forward="true" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app_dev.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
     </entry>
