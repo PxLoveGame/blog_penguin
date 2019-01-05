@@ -33,7 +33,7 @@ class AppKernel extends Kernel
             }
         }
         if (in_array($this->getEnvironment(), array('prod'))) {
-//            $bundles[] = new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle();
+            $bundles[] = new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle();
         }
 
 
