@@ -29,7 +29,7 @@ class Article
     protected $id;
 
     /**
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="string", unique=true)
      */
     protected $title;
 
@@ -49,20 +49,18 @@ class Article
      */
     protected $content;
 
+
+
+    /**
+     * @ORM\Column(type="string", options={"default" : "admin"})
+     */
+    protected $author;
+
     /**
      * @ORM\Column(type="datetime", options={"default": "CURRENT_TIMESTAMP"})
      */
     protected $published;
 
-
-
-
-    // ==== Construct ====
-
-//    public function __construct( $title, $t )
-//    {
-//
-//    }
 
 
     // ==== Getter / Setter ====
@@ -160,5 +158,21 @@ class Article
     public function setPhotoUrl($photo_url)
     {
         $this->photo_url = $photo_url;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getAuthor()
+    {
+        return $this->author;
+    }
+
+    /**
+     * @param mixed $author
+     */
+    public function setAuthor($author)
+    {
+        $this->author = $author;
     }
 }

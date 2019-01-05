@@ -26,6 +26,15 @@ class UsersFixtures extends Fixture
      */
     public function load(ObjectManager $manager)
     {
+
+        $admin = new User();
+        $admin->setUsername("admin");
+        $admin->setPlainPassword("admin");
+        $admin->setEmail("admin@example.com");
+        $admin->setRoles([User::ROLE_SUPER_ADMIN]);
+        $admin->setEnabled(true);
+        $manager->persist($admin);
+
         // create 20 users
         for ($i = 0; $i < 5; $i++) {
             $user = new User();
@@ -38,13 +47,7 @@ class UsersFixtures extends Fixture
             $user->setEnabled(true);
         }
 
-        $admin = new User();
-        $admin->setUsername("admin");
-        $admin->setPlainPassword("admin");
-        $admin->setEmail("admin@example.com");
-        $admin->setRoles([User::ROLE_SUPER_ADMIN]);
-        $admin->setEnabled(true);
-        $manager->persist($admin);
+
 
 
 

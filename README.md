@@ -1,42 +1,53 @@
-blog_penguin
-============
+Le blog des pingouins
+=====================
 
-What does the penguin say ? Can penguins fly ?
+**What does the penguin say ? Can penguins fly ? Come and find out !**
 
-Come and find out !
+ [Lien vers l'app Heroku](https://chaillot-kriszt-blog.herokuapp.com/)
 
- [App is HERE](https://chaillot-kriszt-blog.herokuapp.com/)
-
-A Symfony project created on November 29, 2018, 3:13 pm.
-
-Auteurs : Anthony Chaillot, Theo Kriszt
+**Auteurs :** Anthony Chaillot, Theo Kriszt
 
 #Recap'
 - Doctrine Fixtures pour peupler la base [dev]
 - Doctrine FOSUserBundle pour les utilisateurs
 - FontAwesome pour les icones
 
+# Utilisateurs
+- Anonyme : Peut consulter le blog
+- Enregistré : Peut poster et commenter
+- Admin (compte unique) : peut modifier/supprimer tous les articles
+
+## Inscription / connexion
+Le lien de connexion se trouve dans la barre de navigation
+
+Si vous n'avez pas de compte, la page de login mène propose de s'inscrire
+
+Le compte administrateur utilise les identifiants / mdp ``admin / admin``
+
 # TODO : cf diapo sur le readme
 ---------------------------
 -[x] Ajouter les encadrants en collaborateurs du projet
 -[x] ajouter la BdD postgre
--[ ] CRUD sur les users
--[ ] CRUD sur les posts
--[ ] Habiller la page de login ;)
--[ ] Essayer de trouver un Bundle pour mieux gérer les forms
--[ ] Les commentaires
--[x] Check la recherche d'article 
--[ ] Ajouter des tags aux articles 
--[ ] Ajouter une vraie recherche par tags
+-[x] CRUD sur les users
+-[x] CRUD sur les posts
+-[x] Habiller la page de login ;)
+-[x] Les commentaires
+-[x] Check la recherche d'article
 -[ ] Bosser les articles de facon sémantique (article, content, etc.)
--[ ] Virer catégories et rzemplacer par derniersd messages 
+
 
 ##Bonus :
 -[ ] Faire une auth via Google/facebook
 -[ ] Une page 404
--[ ] Traducions
+-[ ] Traductions
+-[ ] Virer catégories et remplacer par derniers messages
+-[ ] Ajouter des tags aux articles 
+-[ ] Ajouter une vraie recherche par tags 
+-[ ] Essayer de trouver un Bundle pour mieux gérer les forms
+
+
 ## CSS
 -[x] eviter de compresser/déformer les photos quand ecran trop petit
 -[ ] Pousser le CSS de base
--[ ] Interface Admin
 -[ ] Inscription Users
+-[ ] ~~-Interface Admin~~

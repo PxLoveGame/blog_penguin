@@ -3,6 +3,7 @@
 namespace AppBundle\Controller;
 
 use AppBundle\Entity\Article;
+use AppBundle\Entity\Comment;
 use DateTime;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\Form\Extension\Core\Type\FileType;
@@ -50,7 +51,7 @@ class PostController extends Controller
             $photo = $form['photo_url']->getData();
 
             if($photo == null){
-                $photo = 'img/default_picture.jpg';
+//                $photo = 'img/default_picture.jpg';
                 $photo = null;
                 $article->setPhotoUrl($photo);
             }
@@ -70,6 +71,8 @@ class PostController extends Controller
 //            dump($article);
 
             $article->setUrl($article->getTitle());
+            $user = $this->getUser();
+            $article->setAuthor($user->getUsername());
 
 
 
@@ -97,9 +100,8 @@ class PostController extends Controller
     public function postAction($arg, Request $request)
     {
 
-        $repository = $this->getDoctrine()->getRepository(Article::class);
-        $article = $repository->findByName($arg)[0];
-//        dump($article);
+        $articlesRepository = $this->getDoctrine()->getRepository(Article::class);
+        $article = $articlesRepository->findByName($arg)[0];
 
         // search form
         $searchForm = $this->createFormBuilder($article)
@@ -107,13 +109,71 @@ class PostController extends Controller
             ->add('save', SubmitType::class, array('label' => 'Go!'))
             ->getForm();
 
-        $searchForm->handleRequest($request);
+
+        // Formulaire pour poster un com'
+        $comment = new Comment();
+        $comment_form = $this->createFormBuilder($comment)
+            ->add('content', TextareaType::class , array('label' => 'Ecrire un commentaire', 'required' => true))
+//            ->add('photo_url', FileType::class, array('label' => 'Image', 'required' => false))
+            ->add('save', SubmitType::class, array('label' => 'Publier'))
+            ->getForm();
+
+//        dump($request);
+//        dump($request->request);
+//        dump('has form : ' . $request->request->has('form'));
+
+        if ($request->request->has('form')){
+            $comment_form->handleRequest($request);
+
+        } else {
+
+            $searchForm->handleRequest($request);
+        }
+
+
 
         if ($searchForm->isSubmitted() && $searchForm->isValid()) {
             return $this->redirect($this->generateUrl('search', array('name' => $searchForm['title']->getData())));
         }
 
+        // Verifier si il est possible d'editer/supprimer le post par l'utilisateur actuel
+        $user = $this->getUser();
+        $isAdmin = $user && in_array("ROLE_SUPER_ADMIN", $user->getRoles());
+        $isAuthor = $user && $user->getUsername() == $article->getAuthor();
+        $canManage = $isAdmin || $isAuthor;
+
+        // Formulaire pour poster un commentaire
+        $commentsRepository = $this->getDoctrine()->getRepository(Comment::class);
+        $comments = $commentsRepository->getArticleComments($article->getId());
+
+
+        $commentsCount = count($comments);
+
+
+        if ($comment_form->isSubmitted() && $comment_form->isValid()) {
+
+            if($comment_form['content']->getData() != null){
+                $comment->setContent($comment_form['content']->getData());
+            }
+
+            $comment->setPost($article->getId());
+            $comment->setAuthor($user->getUsername());
+            $comment->setPublished(new \DateTime());
+
+            $entityManager = $this->getDoctrine()->getManager();
+            $entityManager->persist($comment);
+            $entityManager->flush();
+
+            return $this->redirectToRoute('app_post_post', array("arg" => $article->getTitle() ));
+        }
+
+
+
         return $this->render('post.html.twig', array(
+            "commentForm"=> $comment_form->createView(),
+            "commentsCount" => $commentsCount,
+            "comments" => $comments,
+            "canManage" => $canManage,
             "arg" => $arg,
             'article'=> $article,
             'searchForm' => $searchForm->createView()
@@ -125,6 +185,7 @@ class PostController extends Controller
      */
     public function EditPost($id, Request $request)
     {
+
         $article = new Article();
 
         // search form
@@ -136,7 +197,7 @@ class PostController extends Controller
         $searchForm->handleRequest($request);
 
         if ($searchForm->isSubmitted() && $searchForm->isValid()) {
-            return $this->redirect($this->generateUrl('search', array('name' => $searchForm['title']->getData())));
+            return $this->redirect($this->generateUrl('post', array('arg' => $searchForm['title']->getData())));
         }
 
         $entityManager = $this->getDoctrine()->getManager();
@@ -144,6 +205,15 @@ class PostController extends Controller
 
         if(!$article) {
             throw $this->createNotFoundException('No article found for id', $id);
+        }
+
+        $user = $this->getUser();
+        $isAdmin = $user && in_array("ROLE_SUPER_ADMIN", $user->getRoles());
+        $isAuthor = $user && $user->getUsername() == $article->getAuthor();
+        $canManage = $isAdmin || $isAuthor;
+
+        if (!$canManage){
+            return $this->redirectToRoute('homepage');
         }
 
         $data_form = new Article();
@@ -179,7 +249,6 @@ class PostController extends Controller
                 'L\'article a bien été modifié !'
             );
 
-            dump($article);
 
             $entityManager->flush();
 
@@ -201,7 +270,12 @@ class PostController extends Controller
         $entityManager = $this->getDoctrine()->getManager();
         $article = $entityManager->getRepository(Article::class)->find($id);
 
-        if(!$article) {
+        $user = $this->getUser();
+        $isAdmin = $user && in_array("ROLE_SUPER_ADMIN", $user->getRoles());
+        $isAuthor = $user && $user->getUsername() == $article->getAuthor();
+        $canManage = $isAdmin || $isAuthor;
+
+        if(!$article || !$canManage) {
 
             $this->addFlash(
                 'notice',
@@ -248,7 +322,7 @@ class PostController extends Controller
 
         if (!$articles){
             $this->addFlash(
-                'notice',
+                'error',
                 'Aucun article n\'a été trouvé pour le titre : '.$name
             );
 

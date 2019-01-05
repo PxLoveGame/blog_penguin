@@ -5,16 +5,15 @@
 
 {% block body %}
 
-    <!-- Blog Entries Column -->
-        {#<h1 class="my-4 title"> Voici les derniers articles !#}
-            {#<small>Hello ?</small>#}
-        {#</h1>#}
+    <section id="articles">
+
 
         {% for article in articles %}
             {% include 'article_short.html.twig'
                 with {'article': article}
             %}
         {% endfor %}
+    </section>
 
         <!-- Pagination -->
         {#<div class="text-center paginator">#}

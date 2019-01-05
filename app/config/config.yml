@@ -62,9 +62,9 @@ fos_user:
     service:
       mailer: fos_user.mailer.twig_swift
 
-    registration:
-      form:
-        type: AppBundle\Form\RegistrationType
+#    registration:
+#      form:
+#        type: AppBundle\Form\RegistrationType
 
 doctrine:
   dbal:

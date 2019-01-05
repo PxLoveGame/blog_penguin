@@ -145,3 +145,12 @@ body {
 .custom-button:hover, .custom-button:focus {
   background: royalblue;
 }
+
+.media{
+  display: block;
+  border: thin solid;
+  border-color: rgba(57, 57, 57, 0.25);
+  border-radius: 6px;
+  margin: 0.5em;
+  padding: 0.5em;
+}

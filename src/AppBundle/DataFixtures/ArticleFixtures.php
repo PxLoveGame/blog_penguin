@@ -29,6 +29,7 @@ class ArticleFixtures extends Fixture
             $article = new Article();
 
             $article->setTitle('article '.$i);
+            $article->setAuthor("admin");
             $article->setContent('Lorem ipsum dolor sit amet et consecuetir');
             $date = mt_rand(1, 28) . '-' . mt_rand(1, 12) . '-' . mt_rand(2013, 2018);
             $article->setPublished( new \DateTime($date) );
@@ -46,6 +47,7 @@ Baptisé Palaeeudyptes klekowskii, il aurait vécu à l’éocène – il y a en
 
 A comparer avec le précédent record de spécimen connu chez les sphenisciformes – 1,66 mètre pour 82,3 kilos – et au 1,16 mètre en moyenne de la plus grande espèce encore vivante, le manchot empereur, qui, d’un seul coup, ne se sent plus si grand.');
         $article->setPublished( new \DateTime() );
+        $article->setAuthor("admin");
         $article->setPhotoUrl('img/default_picture.jpg');
 
         $manager->persist($article);

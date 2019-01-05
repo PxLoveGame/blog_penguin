@@ -37,6 +37,8 @@ class ArticleRepository extends EntityRepository
         return $count;
     }
 
+
+
     public function findByName($name){
         $name = strtolower($name);
 

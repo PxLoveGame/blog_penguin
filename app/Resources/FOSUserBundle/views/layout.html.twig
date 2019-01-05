@@ -5,16 +5,16 @@
 
 {% block body %}
 
-    <div>
-        {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
-            {{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }} |
-            <a href="{{ path('fos_user_security_logout') }}">
-                {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
-            </a>
+    {#<div>#}
+        {#{% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}#}
+            {#{{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }} |#}
+            {#<a href="{{ path('fos_user_security_logout') }}">#}
+                {#{{ 'layout.logout'|trans({}, 'FOSUserBundle') }}#}
+            {#</a>#}
         {#{% else %}#}
             {#<a href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a>#}
-        {% endif %}
-    </div>
+        {#{% endif %}#}
+    {#</div>#}
 
     {% if app.request.hasPreviousSession %}
         {% for type, messages in app.session.flashbag.all() %}
@@ -31,20 +31,4 @@
         {% endblock fos_user_content %}
     </div>
 {% endblock %}
-
-{#{% block sidebar %}#}
-    {#<div class="card-body">#}
-
-        {#{{ form_start(form) }}#}
-        {#{{ form_errors(form) }}#}
-
-        {#<div class="input-group">#}
-            {#{{ form_widget(form.title, {'attr' : {'class' : 'form-control', 'placeholder' : 'Titre'}}) }}#}
-            {#<span class="input-group-btn">#}
-                  {#{{ form_widget(form.save, {'attr' : {'class' : 'btn btn-secondary'}})}}#}
-                {#</span>#}
-        {#</div>#}
-        {#{{ form_end(form) }}#}
-    {#</div>#}
-{#{% endblock %}#}
 
