@@ -6,11 +6,14 @@
 
 body {
   padding-top: 54px;
-  background-image: url("../img/penguin_background2.jpg");
+  background-image: url("../img/baby.jpg");
+  /*background-image: url("../img/penguin_background2.jpg");*/
   /*background-position: left top;*/
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: auto 100%;
   background-attachment: fixed;
+  background-position: right bottom;
+  background-color: #F0F5FB;
 }
 
 /*html,body{*/
