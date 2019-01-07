@@ -1,13 +1,182 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
-    </head>
-    <body>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>{% block title %}Le blog des Pingouins{% endblock %}</title>
+      {% block stylesheets %}{% endblock %}
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css" />
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+      {#<link href="{{ asset('bundles/bmatznerfontawesome/css/font-awesome.min.css') }}" rel="stylesheet">#}
+      {#<link href="{{ asset('bundles/bmatznerfontawesome/fonts/fontawesome-webfont.svg') }}" rel="stylesheet">#}
+    <!-- Custom styles for this template -->
+    <link href="{{ asset('css/blog-home.css') }}" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+  {% for message in app.flashes('success') %}
+    <div class="alert alert-success">
+        {{ message }}
+    </div>
+  {% endfor %}
+
+  {% for message in app.flashes('notice') %}
+    <div class="alert alert-info">
+        {{ message }}
+    </div>
+  {% endfor %}
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="{{ path("homepage") }}">Bienvenue sur le blog spécialisé sur les PINGOUINS !</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="{{ path("homepage") }}">Accueil
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li>
+
+              {# Afficher "connecté en tant que XXX" ou "Connexion" #}
+                  {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                    <span class="nav-link" style="font-size: inherit">
+                      <i class="fa fa-pad fa-user"></i>
+                        {{ app.user.username }} |
+                    <a class="nav-link d-inline" href="{{ path('fos_user_security_logout') }}">
+                        {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
+                    </a>
+                      </span>
+                  {% else %}
+                    <a class="nav-link" href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a>
+                  {% endif %}
+              <span class="sr-only">(current)</span>
+
+            </li>
+            <!--
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sign In</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Log In</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-8">
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
-    </body>
+        </div>
+
+        <!-- Sidebar Widgets Column -->
+        <aside class="col-md-3 ml-auto">
+
+          <!-- Search Widget -->
+
+          <div class="card my-4">
+            <h5 class="card-header widget-color"><i class="fa fa-search fa-pad"></i>Recherche</h5>
+
+            {% block sidebar %}
+
+            {% endblock %}
+
+
+          </div>
+
+          <!-- Add article Widget -->
+          <div class="card my-4">
+            <h5 class="card-header widget-color"><i class="fa fa-pad fa-plus"></i>Ajouter un article</h5>
+            <div class="card-body">
+
+                {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                  <div class="input-group">
+                    <a class="button-create mx-auto btn btn-secondary" href="{{ path('goto_create') }}" type="button">Go!</a>
+                  </div>
+                {% else %}
+                  <span> Vous devez être connecté</span>
+                {% endif %}
+
+
+            </div>
+          </div>
+
+          {#<!-- Categories Widget -->#}
+          {#<div class="card my-4">#}
+            {#<h5 class="card-header widget-color">Catégories</h5>#}
+            {#<div class="card-body">#}
+              {#<div class="row">#}
+                {#<div class="col-lg-6">#}
+                  {#<ul class="list-unstyled mb-0">#}
+                    {#<li>#}
+                      {#<a href="#">Web Design</a>#}
+                    {#</li>#}
+                    {#<li>#}
+                      {#<a href="#">HTML</a>#}
+                    {#</li>#}
+                    {#<li>#}
+                      {#<a href="#">Freebies</a>#}
+                    {#</li>#}
+                  {#</ul>#}
+                {#</div>#}
+                {#<div class="col-lg-6">#}
+                  {#<ul class="list-unstyled mb-0">#}
+                    {#<li>#}
+                      {#<a href="#">JavaScript</a>#}
+                    {#</li>#}
+                    {#<li>#}
+                      {#<a href="#">CSS</a>#}
+                    {#</li>#}
+                    {#<li>#}
+                      {#<a href="#">Tutorials</a>#}
+                    {#</li>#}
+                  {#</ul>#}
+                {#</div>#}
+              {#</div>#}
+            {#</div>#}
+          {#</div>#}
+
+        {#</div>#}
+
+      </aside>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    {#<footer class="py-5 bg-dark" >#}
+      {#<div class="container">#}
+        {#<p class="m-0 text-center text-white">Copyright &copy; T.Kriszt & A.Chaillot</p>#}
+      {#</div>#}
+      {#<!-- /.container -->#}
+    {#</footer>#}
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{{ asset('js/jquery/jquery.min.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
+
+  </body>
+
 </html>

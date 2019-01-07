@@ -1,0 +1,60 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+{#{% if error %}#}
+    {#<div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>#}
+{#{% endif %}#}
+
+{#<form action="{{ path("fos_user_security_check") }}" method="post">#}
+    {#{% if csrf_token %}#}
+        {#<input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />#}
+    {#{% endif %}#}
+
+    {#<label for="username">{{ 'security.login.username'|trans }}</label>#}
+    {#<input type="text" id="username" name="_username" value="{{ last_username }}" required="required" autocomplete="username" />#}
+
+    {#<label for="password">{{ 'security.login.password'|trans }}</label>#}
+    {#<input type="password" id="password" name="_password" required="required" autocomplete="current-password" />#}
+
+    {#<input type="checkbox" id="remember_me" name="_remember_me" value="on" />#}
+    {#<label for="remember_me">{{ 'security.login.remember_me'|trans }}</label>#}
+
+    {#<input type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" />#}
+{#</form>#}
+
+<div class="container">
+    <div class="row">
+        <form class = "formulaire" action="{{ path("fos_user_security_check") }}" method="post">
+            {% if csrf_token %}
+                <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+            {% endif %}
+
+            <h2 class="heading"> Please sign in </h2>
+            {% if error %}
+                <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+            {% endif %}
+            <div class="custom-input">
+                {#<label for="username">{{ 'username'|trans }}</label>#}
+                <input placeholder="Username"  type="text" id="username" name="_username" value="{{ last_username }}" required="required" autocomplete="username" />
+            </div>
+
+            <div class="custom-input">
+                {#<label for="password">{{ 'password'|trans }}</label>#}
+                <input  placeholder="Password"  type="password" id="password" name="_password" required="required" autocomplete="current-password" />
+            </div>
+
+            <div class="custom-checkbox">
+                <input type="checkbox" id="remember_me" name="_remember_me" value="on" />
+                <label for="remember_me">{{ 'Remember me'|trans }}</label>
+            </div>
+            <div class="row" style="margin-top: 25px">
+                {#<div class="col-lg custom-link" style="padding-right: 0;">#}
+                    {#<a class="btn btn-secondary" href="/register">{{'create an account' | trans }}</a>#}
+                {#</div>#}
+                <div class="col-lg" style="text-align: right;">
+                    <a style="float: left" class="btn btn-secondary" href="/register">{{'create an account' | trans }}</a>
+                    <input class="btn btn-primary" type="submit" id="_submit" name="_submit" value="{{ 'submit'|trans }}" />
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

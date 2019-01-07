@@ -1,0 +1,159 @@
+/*!
+ * Start Bootstrap - Blog Home (https://startbootstrap.com/template-overviews/blog-home)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-blog-home/blob/master/LICENSE)
+ */
+
+body {
+  padding-top: 54px;
+  background-image: url("../img/baby.jpg");
+  /*background-image: url("../img/penguin_background2.jpg");*/
+  /*background-position: left top;*/
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-attachment: fixed;
+  background-position: right bottom;
+  background-color: #E3F1FA;
+}
+
+/*html,body{*/
+  /*height: 100%*/
+/*}*/
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+.title {
+  text-align: center;
+  color: white;
+
+  background-color: rgba(52, 58, 64, 255);
+  border-radius: 25px;
+
+}
+
+.widget-color {
+  color: white;
+  background-color: rgba(52, 58, 64, 255);
+}
+
+.article-text-short {
+  font-size: large;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 650px;
+}
+
+.spacer {
+  margin-top: 3%;
+}
+
+.button-create {
+  width: 50%;
+}
+
+.button-publish {
+  width: 30%;
+  align-items: center;
+}
+
+.paginator {
+  background-color: rgba(52, 58, 64, 255);
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 5px;
+  color: white;
+}
+
+.form_title{
+  background-color: rgba(52, 58, 64, 255);
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  width: 20%;
+  margin-bottom: 1%;
+}
+
+.card-img-top{
+  max-height: 350px;
+  height: auto;
+}
+
+.fa-pad{
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.heading {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+.formulaire {
+  background-color: whitesmoke;
+  font-size: large;
+  border: 1px solid gainsboro;
+  padding: 45px 50px;
+  border-radius: 10px;
+  margin: 0 auto;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 255, .2);
+}
+.custom-input{
+  margin: 15px 0;
+  /*font-size: 14px;*/
+}
+.custom-input label{
+  display: block;
+  margin: 0;
+}
+.custom-input input, .custom-input input:focus{
+  display: block;
+  background-color: white !important;
+  border-radius: 5px;
+  padding: 10px 15px;
+  border: 1px solid gainsboro;
+  font-size: 18px;
+}
+.custom-checkbox label{
+  font-weight: 500;
+  font-size: 16px;
+  vertical-align: top;
+  margin: 0;
+}
+.custom-link a{
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.custom-button {
+  border-radius: 5px;
+  border: none !important;
+  padding: 5px 20px ;
+  box-shadow: none !important;
+  background: dodgerblue;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: inherit !important;
+  cursor: pointer;
+  transition: 0.3s;
+  vertical-align: top;
+  text-align: right;
+}
+.custom-button:hover, .custom-button:focus {
+  background: royalblue;
+}
+
+.media{
+  display: block;
+  border: thin solid;
+  border-color: rgba(57, 57, 57, 0.25);
+  border-radius: 6px;
+  margin: 0.5em;
+  padding: 0.5em;
+}

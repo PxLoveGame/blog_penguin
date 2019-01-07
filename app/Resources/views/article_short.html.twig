@@ -1,0 +1,21 @@
+<!-- Blog Post -->
+<article>
+<div class="card mb-4">
+
+    <img class="card-img-top" src="{{ asset(article.getPhotoUrl()) }}" alt="">
+    <div class="card-body">
+        <header>
+            <h2 class="card-title">{{ article.getTitle() }}</h2>
+        </header>
+        <p class="card-text article-text-short">{{ article.getContent() }}</p>
+        <a href="/post/{{ article.getTitle() }}" class="btn btn-primary">Read More &rarr;</a>
+
+        {# N'autoriser la modif que dans la vue détaillée de l'article #}
+        {#<a href="/post/delete/{{ article.getId() }}" class="btn btn-danger float-right mx-1 fa fa-remove"> Delete</a>#}
+        {#<a href="/post/edit/{{ article.getId() }}" class="btn btn-warning float-right mx-1 fa fa-edit"> Edit</a>#}
+    </div>
+    <div class="card-footer text-muted widget-color">
+        <span class="">Publié le {{ article.published | date('d/m/Y')}} par {{ article.author }}</span>
+    </div>
+</div>
+</article>

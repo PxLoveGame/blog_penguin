@@ -1,0 +1,104 @@
+{% extends "base.html.twig" %}
+
+{#{% block title %}Le blog des pingouins{% endblock %}#}
+
+{% block body %}
+        <div class="spacer"></div>
+    <section>
+        <article>
+        <div class="card mb-4">
+
+            <img class="card-img-top" height="400" src="{{ asset(article.getPhotoUrl()) }}" alt="">
+
+            <div class="card-header">
+                <h1 class="card-title">{{ article.title }}</h1>
+                <span class="float-right">Le {{ article.published | date('d/m/Y') }} par {{ article.author }}</span>
+            </div>
+
+            <div class="card-body">
+
+                <span class="card-text">
+                    {{ article.content }}
+                </span>
+            </div>
+
+            {% if canManage %}
+            <div class="card-footer">
+                <a href="/post/edit/{{ article.getId() }}" class="btn btn-warning float-right mx-1">Edit</a>
+                <a href="/post/delete/{{ article.getId() }}" class="btn btn-danger float-right mx-1">Delete</a>
+            </div>
+            {% endif %}
+        </div>
+
+        </article>
+    </section>
+
+    <div class="spacer"></div>
+
+    <section>
+    <div class="card mb-4">
+        <div class="card-text">
+            {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                {{ form_start(commentForm) }}
+                {{ form_errors(commentForm) }}
+
+                <div>
+                    <h4 style="width: -moz-fit-content" class="mx-auto media-heading">
+                        {{ commentForm.content.vars.label }}
+                    </h4>
+
+                </div>
+                <div>
+                    {{ form_widget(commentForm.content) }}
+                </div>
+                {{ form_widget(commentForm.save, {'attr':{'class': 'button-publish btn btn-primary'}}) }}
+                {{  form_end(commentForm) }}
+            {% else %}
+                <div class=" alert alert-warning"> Vous devez être connecté pour laisser un commentaire</div>
+            {% endif %}
+
+
+        </div>
+
+        <div class="card-header">
+            <h3 class="card-title"> {{ commentsCount }} Commentaires</h3>
+        </div>
+
+        {% for comment in comments %}
+
+            <div class="media">
+                <p class="pull-right"><small>{{ comment.published | date('d/m/Y H:i') }}</small></p>
+                <div class="media-body">
+
+                    <h4 class="media-heading user_name">{{ comment.getAuthor() }}</h4>
+                    {{ comment.getContent() }}
+
+                </div>
+            </div>
+        {% endfor %}
+
+        <div class="card-body">
+
+        </div>
+
+
+    </div>
+    </section>
+
+{% endblock %}
+
+{% block sidebar %}
+    <div class="card-body">
+
+        {{ form_start(searchForm) }}
+        {{ form_errors(searchForm) }}
+
+        <div class="input-group">
+            {{ form_widget(searchForm.title, {'attr' : {'class' : 'form-control', 'placeholder' : 'Titre'}}) }}
+            <span class="input-group-btn">
+                  {{ form_widget(searchForm.save, {'attr' : {'class' : 'btn btn-secondary'}})}}
+                </span>
+        </div>
+        {{ form_end(searchForm) }}
+    </div>
+{% endblock %}

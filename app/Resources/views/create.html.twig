@@ -1,0 +1,56 @@
+{% extends "base.html.twig" %}
+
+{#{% block title %}AppBundle:BlogController:creation{% endblock %}#}
+
+{% form_theme form 'bootstrap_4_layout.html.twig' %}
+
+{% block body %}
+
+    <h1 class="my-4 title">Créez votre article</h1>
+    {{ form_start(form) }}
+
+        {{ form_errors(form) }}
+    <div class="spacer">
+        <div class="form_title spacer">
+            {{ form.title.vars.label }}
+        </div>
+            {{ form_widget(form.title) }}
+    </div>
+
+    <div class="spacer">
+        <div class="form_title spacer">
+            {{ form.content.vars.label }}
+        </div>
+            {{ form_widget(form.content) }}
+    </div>
+
+    <div class="spacer">
+        <div class="form_title spacer">
+            {{ form.photo_url.vars.label }}
+        </div>
+            {{ form_widget(form.photo_url) }}
+    </div>
+
+        <div class="align-items-center spacer">
+            {{ form_widget(form.save, {'attr':{'class': 'button-publish btn btn-secondary'}}) }}
+        </div>
+    {{ form_end(form) }}
+
+
+{% endblock %}
+
+{% block sidebar %}
+    <div class="card-body">
+
+        {{ form_start(searchForm) }}
+        {{ form_errors(searchForm) }}
+
+        <div class="input-group">
+            {{ form_widget(searchForm.title, {'attr' : {'class' : 'form-control', 'placeholder' : 'Titre'}}) }}
+            <span class="input-group-btn">
+                  {{ form_widget(searchForm.save, {'attr' : {'class' : 'btn btn-secondary'}})}}
+                </span>
+        </div>
+        {{ form_end(searchForm) }}
+    </div>
+{% endblock %}

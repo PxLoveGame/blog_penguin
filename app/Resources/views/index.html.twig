@@ -1,0 +1,67 @@
+{% extends "base.html.twig" %}
+
+{#{% block title %}Blog pingouins{% endblock %}#}
+
+
+{% block body %}
+
+    <section id="articles">
+
+
+        {% for article in articles %}
+            {% include 'article_short.html.twig'
+                with {'article': article}
+            %}
+        {% endfor %}
+    </section>
+
+        <!-- Pagination -->
+        {#<div class="text-center paginator">#}
+            {#<div>#}
+                {#<small>Nombre total d'articles : {{ nb_articles }}</small>#}
+                {#<small>Nombre total de pages : {{ nb_pages }}</small>#}
+            {#</div>#}
+            {#<strong>Page courante : {{ current_page }}</strong>#}
+        {#</div>#}
+
+        <ul class="pagination justify-content-center mb-4">
+            {% if current_page == 1 %}
+            <li class="page-item ">
+                <a class="page-link" href="/{{ current_page + 1 }}">&larr; Older</a>
+            </li>
+            <li class="page-item disabled">
+                <a class="page-link" href="/{{ current_page - 1 }}">Newer &rarr;</a>
+            </li>
+            {% elseif current_page == nb_pages %}
+                <li class="page-item disabled">
+                    <a class="page-link" href="/{{ current_page + 1 }}">&larr; Older</a>
+                </li>
+                <li class="page-item ">
+                    <a class="page-link" href="/{{ current_page - 1 }}">Newer &rarr;</a>
+                </li>
+            {% else %}
+                <li class="page-item ">
+                    <a class="page-link" href="/{{ current_page + 1 }}">&larr; Older</a>
+                </li>
+                <li class="page-item ">
+                    <a class="page-link" href="/{{ current_page - 1 }}">Newer &rarr;</a>
+                </li>
+            {% endif %}
+        </ul>
+{% endblock %}
+
+{% block sidebar %}
+    <div class="card-body">
+
+        {{ form_start(form) }}
+        {{ form_errors(form) }}
+
+        <div class="input-group">
+            {{ form_widget(form.title, {'attr' : {'class' : 'form-control', 'placeholder' : 'Titre'}}) }}
+            <span class="input-group-btn">
+                  {{ form_widget(form.save, {'attr' : {'class' : 'btn btn-secondary'}})}}
+                </span>
+        </div>
+        {{ form_end(form) }}
+    </div>
+{% endblock %}
